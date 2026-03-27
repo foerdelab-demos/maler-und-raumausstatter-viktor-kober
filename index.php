@@ -141,8 +141,7 @@ function h(string $key): string
     <div class="container header-inner">
 
         <a href="#" class="logo" aria-label="Viktor Kober – Startseite">
-            <span class="logo-name">Viktor Kober</span>
-            <span class="logo-tagline">Maler &amp; Renovierung</span>
+            <img src="img/Viktor%20Kober.png" alt="Viktor Kober – Maler & Renovierung" class="logo-img">
         </a>
 
         <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
@@ -170,8 +169,11 @@ function h(string $key): string
 ═══════════════════════════════════════════════════════════════════════════ -->
 <section class="hero" id="hero">
 
-    <!-- Bildbereich: Hier echtes Hochformat-Bild eines frisch renovierten Raumes einfügen -->
+    <!-- Video-Hintergrund -->
     <div class="hero-image" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="video/Elephant_Splashes_Colorful_Confetti_On_Gradient_Orange_Loop_source_2309138.mp4" type="video/mp4">
+        </video>
         <div class="hero-image-overlay"></div>
     </div>
 
@@ -748,8 +750,7 @@ function h(string $key): string
     <div class="container footer-inner">
 
         <div class="footer-brand">
-            <span class="logo-name">Viktor Kober</span>
-            <span class="logo-tagline">Maler &amp; Renovierung</span>
+            <img src="img/Viktor%20Kober.png" alt="Viktor Kober – Maler & Renovierung" class="footer-logo-img">
             <p>Zuverlässige Malerarbeiten in Büdelsdorf, Rendsburg, Eckernförde und Umgebung – persönlich von mir.</p>
         </div>
 
@@ -779,9 +780,15 @@ function h(string $key): string
         <div class="container">
             <p>&copy; <?= date('Y') ?> Viktor Kober – Maler &amp; Renovierungsarbeiten. Alle Rechte vorbehalten.</p>
             <p><a href="#datenschutz">Datenschutz</a> · <a href="#impressum">Impressum</a></p>
+            <p class="footer-credit">Webseite erstellt von <a href="https://jasonholweg.de" target="_blank" rel="noopener noreferrer">JasonHolweg.de</a></p>
         </div>
     </div>
 </footer>
+
+<!-- Demo Banner -->
+<div class="demo-banner" id="demo-banner">
+    <span>DEMO – Ein Projekt von <a href="https://foerdelab.de" target="_blank" rel="noopener noreferrer">Fördelab.de</a></span>
+</div>
 
 <script src="script.js"></script>
 </body>
