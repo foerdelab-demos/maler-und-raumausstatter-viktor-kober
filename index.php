@@ -179,7 +179,7 @@ function h(string $key): string
         <div class="hero-text">
             <p class="hero-pre">Malerbetrieb aus Büdelsdorf</p>
             <h1 class="hero-headline">Malerarbeiten,<br>die Ihr Zuhause<br>sichtbar aufwerten.</h1>
-            <p class="hero-sub">Saubere Arbeit, zuverlässige Termine und ein Ergebnis,<br class="br-desktop"> das Sie täglich erfreut – persönlich betreut von Viktor Kober.</p>
+            <p class="hero-sub">Saubere Arbeit, zuverlässige Termine und ein Ergebnis,<br class="br-desktop"> das Sie täglich erfreut – persönlich betreut von mir, Viktor Kober.</p>
 
             <div class="hero-actions">
                 <a href="#kontakt" class="btn btn-primary">Kostenlos anfragen</a>
@@ -220,8 +220,8 @@ function h(string $key): string
     <div class="container">
 
         <div class="section-intro text-center">
-            <h2>Warum Kunden auf Viktor Kober vertrauen</h2>
-            <p>Kein Großbetrieb. Kein anonymer Handwerker. Sondern ein Meister, der selbst auf der Baustelle steht – und für das Ergebnis geradesteht.</p>
+            <h2>Warum meine Kunden zufrieden sind</h2>
+            <p>Kein Großbetrieb. Kein anonymer Handwerker. Ich stehe selbst auf der Baustelle – und stehe persönlich für das Ergebnis gerade.</p>
         </div>
 
         <div class="trust-grid">
@@ -231,7 +231,7 @@ function h(string $key): string
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                 </div>
                 <h3>Direkter Ansprechpartner</h3>
-                <p>Sie sprechen immer mit Viktor Kober persönlich. Keine Weiterleitungen, kein Callcenter – von der ersten Anfrage bis zur Übergabe.</p>
+                <p>Sie sprechen immer direkt mit mir. Keine Weiterleitungen, kein Callcenter – von der ersten Anfrage bis zur Übergabe.</p>
             </div>
 
             <div class="trust-card">
@@ -239,7 +239,7 @@ function h(string $key): string
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                 </div>
                 <h3>Saubere Ausführung</h3>
-                <p>Ordentliche Vorbereitung, sorgfältige Abdeckung, präzises Abkleben – und am Ende eine Übergabe, bei der keine Spuren vom Handwerker zu sehen sind.</p>
+                <p>Ordentliche Vorbereitung, sorgfältige Abdeckung, präzises Abkleben – und am Ende eine Übergabe, bei der keine Spuren zu sehen sind.</p>
             </div>
 
             <div class="trust-card">
@@ -247,7 +247,7 @@ function h(string $key): string
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                 </div>
                 <h3>Zuverlässige Termine</h3>
-                <p>Was vereinbart wird, wird eingehalten. Kein ewiges Warten, keine kurzfristigen Absagen – weil Ihr Alltag und Ihr Vertrauen das wert sind.</p>
+                <p>Was ich vereinbare, halte ich ein. Kein ewiges Warten, keine kurzfristigen Absagen – weil Ihr Alltag und Ihr Vertrauen mir wichtig sind.</p>
             </div>
 
             <div class="trust-card">
@@ -255,7 +255,7 @@ function h(string $key): string
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
                 </div>
                 <h3>Faires, klares Angebot</h3>
-                <p>Kein versteckter Kleindruck. Das Angebot zeigt genau, was geplant ist – damit Sie wissen, was Sie erwartet, bevor der erste Pinsel angesetzt wird.</p>
+                <p>Kein versteckter Kleindruck. Mein Angebot zeigt genau, was geplant ist – damit Sie wissen, was Sie erwartet, bevor ich den ersten Pinsel ansetze.</p>
             </div>
 
             <div class="trust-card">
@@ -263,7 +263,7 @@ function h(string $key): string
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 </div>
                 <h3>Aus der Region</h3>
-                <p>Büdelsdorf, Rendsburg, Eckernförde und Umgebung – kurze Wege, schnelle Reaktion, und ein Handwerker, der in der Nachbarschaft bekannt ist.</p>
+                <p>Büdelsdorf, Rendsburg, Eckernförde und Umgebung – kurze Wege, schnelle Reaktion. Ich bin in der Nachbarschaft bekannt und immer in der Nähe.</p>
             </div>
 
             <div class="trust-card">
@@ -271,7 +271,7 @@ function h(string $key): string
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"></path><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
                 </div>
                 <h3>Handwerksqualität</h3>
-                <p>Jahrelange Erfahrung, hochwertige Materialien und der eigene Anspruch, keine Arbeit abzuliefern, die man selbst nicht gern nach Hause nehmen würde.</p>
+                <p>Jahrelange Erfahrung, hochwertige Materialien und mein eigener Anspruch: Ich liefere keine Arbeit ab, die ich nicht selbst gern in meinem Zuhause hätte.</p>
             </div>
 
         </div>
@@ -286,8 +286,8 @@ function h(string $key): string
     <div class="container">
 
         <div class="section-intro text-center">
-            <h2>Was Viktor Kober für Sie übernimmt</h2>
-            <p>Von der Renovierung einzelner Zimmer bis zur vollständigen Sanierung – handwerklich sauber, termingerecht und mit dem Blick für Details.</p>
+            <h2>Was ich für Sie übernehme</h2>
+            <p>Von der Renovierung einzelner Zimmer bis zur vollständigen Sanierung – handwerklich sauber, termingerecht und mit meinem Blick für Details.</p>
         </div>
 
         <div class="services-grid">
@@ -365,42 +365,44 @@ function h(string $key): string
 
         <div class="section-intro text-center">
             <h2>Ergebnisse, die für sich sprechen</h2>
-            <p>Keine Versprechen ohne Belege. Hier sehen Sie echte Ergebnisse aus abgeschlossenen Projekten in der Region.</p>
+            <p>Keine Versprechen ohne Belege. Hier sehen Sie echte Ergebnisse aus meinen abgeschlossenen Projekten in der Region.</p>
         </div>
 
-        <!-- Galerie-Hinweis: Hier echte Vorher-Nachher-Bilder aus abgeschlossenen Projekten einfügen -->
-        <div class="gallery-grid">
+        <!-- Galerie-Carousel -->
+        <div class="gallery-carousel" id="gallery-carousel">
+            <div class="gallery-track" id="gallery-track">
 
-            <figure class="gallery-item gallery-item--wide">
-                <!-- Bild: Wohnzimmer nach Renovierung – helle, sauber gestrichene Wände, klare Kanten -->
-                <div class="gallery-image gallery-image--1" aria-label="Renoviertes Wohnzimmer, Büdelsdorf"></div>
-                <figcaption>Wohnzimmer-Renovierung, Büdelsdorf</figcaption>
-            </figure>
+                <figure class="gallery-slide">
+                    <div class="gallery-image gallery-image--1" aria-label="Renoviertes Wohnzimmer, Büdelsdorf"></div>
+                    <figcaption>Wohnzimmer-Renovierung, Büdelsdorf</figcaption>
+                </figure>
 
-            <figure class="gallery-item">
-                <!-- Bild: Detailaufnahme frisch gestrichene Wand, Übergang Wand/Decke, perfekte Kante -->
-                <div class="gallery-image gallery-image--2" aria-label="Saubere Wandkante nach Anstrich"></div>
-                <figcaption>Präziser Kantenanstrich</figcaption>
-            </figure>
+                <figure class="gallery-slide">
+                    <div class="gallery-image gallery-image--2" aria-label="Saubere Wandkante nach Anstrich"></div>
+                    <figcaption>Präziser Kantenanstrich</figcaption>
+                </figure>
 
-            <figure class="gallery-item">
-                <!-- Bild: Schlafzimmer mit edler Strukturtapete, warme Beleuchtung -->
-                <div class="gallery-image gallery-image--3" aria-label="Schlafzimmer mit Strukturtapete"></div>
-                <figcaption>Strukturtapete Schlafzimmer, Rendsburg</figcaption>
-            </figure>
+                <figure class="gallery-slide">
+                    <div class="gallery-image gallery-image--3" aria-label="Schlafzimmer mit Strukturtapete"></div>
+                    <figcaption>Strukturtapete Schlafzimmer, Rendsburg</figcaption>
+                </figure>
 
-            <figure class="gallery-item">
-                <!-- Bild: Frisch renovierter Flur, helles Grau, saubere Sockelleisten -->
-                <div class="gallery-image gallery-image--4" aria-label="Renovierter Flur mit frischem Anstrich"></div>
-                <figcaption>Flurrenovierung mit neuem Anstrich</figcaption>
-            </figure>
+                <figure class="gallery-slide">
+                    <div class="gallery-image gallery-image--4" aria-label="Renovierter Flur mit frischem Anstrich"></div>
+                    <figcaption>Flurrenovierung mit neuem Anstrich</figcaption>
+                </figure>
 
-            <figure class="gallery-item gallery-item--wide">
-                <!-- Bild: Hausfassade frisch gestrichen, vorher verwittert, jetzt frisch und gepflegt -->
-                <div class="gallery-image gallery-image--5" aria-label="Fassade nach Außenanstrich"></div>
-                <figcaption>Fassadenanstrich, Eckernförde</figcaption>
-            </figure>
+                <figure class="gallery-slide">
+                    <div class="gallery-image gallery-image--5" aria-label="Fassade nach Außenanstrich"></div>
+                    <figcaption>Fassadenanstrich, Eckernförde</figcaption>
+                </figure>
 
+            </div>
+
+            <button class="carousel-btn carousel-btn--prev" id="carousel-prev" aria-label="Vorheriges Bild">&#8249;</button>
+            <button class="carousel-btn carousel-btn--next" id="carousel-next" aria-label="Nächstes Bild">&#8250;</button>
+
+            <div class="carousel-dots" id="carousel-dots"></div>
         </div>
 
         <div class="results-cta text-center">
@@ -423,28 +425,55 @@ function h(string $key): string
                 <h2>Mehr als nur frische Farbe.</h2>
                 <p class="benefits-intro">Ein neuer Anstrich verändert, wie sich ein Raum anfühlt. Manchmal sogar, wie man sich selbst darin fühlt.</p>
 
-                <ul class="benefits-list">
+                <ul class="benefits-list" id="benefits-list">
                     <li>
-                        <strong>Neues Wohngefühl</strong>
-                        <span>Ein frisch renoviertes Zimmer wirkt größer, heller und einladender. Der Unterschied ist sofort spürbar – auch wenn man es nicht bewusst erwartet.</span>
+                        <span class="bar-fill"></span>
+                        <div class="benefit-content">
+                            <strong>Neues Wohngefühl</strong>
+                            <span>Ein frisch renoviertes Zimmer wirkt größer, heller und einladender. Der Unterschied ist sofort spürbar – auch wenn man es nicht bewusst erwartet.</span>
+                        </div>
                     </li>
                     <li>
-                        <strong>Gepflegte Räume</strong>
-                        <span>Saubere Wände ohne Flecken, Risse oder vergilbte Stellen – das gibt einem Zuhause die Pflege zurück, die es verdient.</span>
+                        <span class="bar-fill"></span>
+                        <div class="benefit-content">
+                            <strong>Gepflegte Räume</strong>
+                            <span>Saubere Wände ohne Flecken, Risse oder vergilbte Stellen – das gibt einem Zuhause die Pflege zurück, die es verdient.</span>
+                        </div>
                     </li>
                     <li>
-                        <strong>Werterhalt</strong>
-                        <span>Regelmäßige Renovierungen sind keine Kür, sondern Pflege. Sie schützen Flächen, erhalten den Wert der Immobilie und sparen langfristig Kosten.</span>
+                        <span class="bar-fill"></span>
+                        <div class="benefit-content">
+                            <strong>Werterhalt</strong>
+                            <span>Regelmäßige Renovierungen sind keine Kür, sondern Pflege. Sie schützen Flächen, erhalten den Wert der Immobilie und sparen langfristig Kosten.</span>
+                        </div>
                     </li>
                     <li>
-                        <strong>Zuhause wieder gern zeigen</strong>
-                        <span>Ob Besuch oder der eigene Blick morgens – wenn die Wände frisch sind, macht das etwas mit der Stimmung. Das Zuhause fühlt sich wieder richtig an.</span>
+                        <span class="bar-fill"></span>
+                        <div class="benefit-content">
+                            <strong>Zuhause wieder gern zeigen</strong>
+                            <span>Ob Besuch oder der eigene Blick morgens – wenn die Wände frisch sind, macht das etwas mit der Stimmung. Das Zuhause fühlt sich wieder richtig an.</span>
+                        </div>
                     </li>
                 </ul>
             </div>
 
-            <!-- Bild: Stimmungsvoller Wohnraum, warmes Licht, frisch gestrichene Wand, gemütliche Einrichtung -->
-            <div class="benefits-image" aria-hidden="true"></div>
+            <!-- Vorher-Nachher Vergleich -->
+            <div class="compare-slider" id="compare-slider">
+                <img src="img/nachher.jpg" alt="Nachher – frisch renoviert" class="compare-after" draggable="false">
+                <div class="compare-before-wrap">
+                    <img src="img/vorher.jpg" alt="Vorher – vor der Renovierung" class="compare-before" draggable="false">
+                </div>
+                <div class="compare-handle" id="compare-handle">
+                    <div class="compare-handle-line"></div>
+                    <div class="compare-handle-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="compare-handle-line"></div>
+                </div>
+                <span class="compare-label compare-label--vorher">Vorher</span>
+                <span class="compare-label compare-label--nachher">Nachher</span>
+            </div>
         </div>
 
     </div>
@@ -458,8 +487,8 @@ function h(string $key): string
     <div class="container">
 
         <div class="section-intro text-center">
-            <h2>Was Kunden sagen</h2>
-            <p>Nicht wir reden am lautesten – sondern die, für die wir gearbeitet haben.</p>
+            <h2>Was meine Kunden sagen</h2>
+            <p>Nicht ich rede am lautesten – sondern die, für die ich gearbeitet habe.</p>
         </div>
 
         <div class="testimonials-grid">
@@ -471,11 +500,12 @@ function h(string $key): string
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span class="testimonial-source">Google</span>
                 </div>
-                <p>„Viktor hat unser Schlafzimmer und den Flur renoviert. Er war pünktlich, hat sauber gearbeitet und alles ordentlich abgedeckt. Am Ende war keine einzige Farbspritzer zu finden. Wir würden ihn jederzeit wieder beauftragen."</p>
+                <p>&bdquo;Sehr qualitative hochwertige Malerarbeiten und das zum fairen Preis. So einen sauberen Handwerker habe ich noch nie erlebt. Wirklich sehr zu empfehlen! Außerdem habe ich von Herrn Kober Plissees und Insektenschutz einbauen lassen. Alles zu top Qualität.&ldquo;</p>
                 <footer class="testimonial-author">
-                    <strong>Sandra K.</strong>
-                    <span>Büdelsdorf</span>
+                    <strong>Olga O.</strong>
+                    <span>Google-Bewertung</span>
                 </footer>
             </blockquote>
 
@@ -486,11 +516,12 @@ function h(string $key): string
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span class="testimonial-source">Google</span>
                 </div>
-                <p>„Klare Kommunikation von Anfang an, das Angebot war verständlich und fair. Viktor hat sich an alles gehalten, was besprochen wurde – und das Ergebnis ist wirklich schön geworden. Die Wohnküche wirkt jetzt komplett anders."</p>
+                <p>&bdquo;Sehr saubere Arbeit, sehr zuverlässig und Preisleistung 100&nbsp;% – Präzision und Perfektion. Mehr geht nicht.&ldquo;</p>
                 <footer class="testimonial-author">
-                    <strong>Thomas M.</strong>
-                    <span>Rendsburg</span>
+                    <strong>lack technik</strong>
+                    <span>Google-Bewertung</span>
                 </footer>
             </blockquote>
 
@@ -501,11 +532,12 @@ function h(string $key): string
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span class="testimonial-source">Google</span>
                 </div>
-                <p>„Ich hatte Sorge, dass es chaotisch wird, weil wir während der Arbeiten noch in der Wohnung waren. Viktor war diskret, hat auf Ordnung geachtet und täglich aufgeräumt. Das war angenehmer, als ich erwartet hatte."</p>
+                <p>&bdquo;Tolle Qualität, von der Planung bis zur Ausführung! Individuelle Wünsche wurden berücksichtigt, die Arbeit war präzise und zuverlässig. Wir empfehlen Viktor mehr als gerne weiter.&ldquo;</p>
                 <footer class="testimonial-author">
-                    <strong>Petra W.</strong>
-                    <span>Eckernförde</span>
+                    <strong>Stefan Geilke</strong>
+                    <span>Google-Bewertung</span>
                 </footer>
             </blockquote>
 
@@ -531,7 +563,7 @@ function h(string $key): string
                 <div class="process-number" aria-hidden="true">01</div>
                 <div class="process-content">
                     <h3>Anfrage stellen</h3>
-                    <p>Per Telefon, WhatsApp oder Kontaktformular – ganz wie es Ihnen passt. Kurz beschreiben, was ansteht, und wir melden uns schnellstmöglich zurück.</p>
+                    <p>Per Telefon, WhatsApp oder Kontaktformular – ganz wie es Ihnen passt. Beschreiben Sie kurz, was ansteht, und ich melde mich schnellstmöglich zurück.</p>
                 </div>
             </li>
 
@@ -539,7 +571,7 @@ function h(string $key): string
                 <div class="process-number" aria-hidden="true">02</div>
                 <div class="process-content">
                     <h3>Gemeinsame Besichtigung</h3>
-                    <p>Viktor Kober kommt persönlich vorbei, schaut sich die Situation an, beantwortet Fragen und bespricht, was möglich ist und was Sie sich wünschen.</p>
+                    <p>Ich komme persönlich vorbei, schaue mir die Situation an, beantworte Ihre Fragen und bespreche mit Ihnen, was möglich ist und was Sie sich wünschen.</p>
                 </div>
             </li>
 
@@ -555,7 +587,7 @@ function h(string $key): string
                 <div class="process-number" aria-hidden="true">04</div>
                 <div class="process-content">
                     <h3>Sorgfältige Umsetzung</h3>
-                    <p>Zum vereinbarten Termin beginnen die Arbeiten – gründlich vorbereitet, sauber ausgeführt, ohne unnötige Unterbrechungen oder Verzögerungen.</p>
+                    <p>Zum vereinbarten Termin beginne ich mit den Arbeiten – gründlich vorbereitet, sauber ausgeführt, ohne unnötige Unterbrechungen oder Verzögerungen.</p>
                 </div>
             </li>
 
@@ -563,7 +595,7 @@ function h(string $key): string
                 <div class="process-number" aria-hidden="true">05</div>
                 <div class="process-content">
                     <h3>Übergabe &amp; Abnahme</h3>
-                    <p>Gemeinsam schauen wir uns das Ergebnis an. Erst wenn Sie zufrieden sind, ist die Arbeit erledigt. Ordentlich, vollständig und ohne Rückstände.</p>
+                    <p>Gemeinsam schauen wir uns das Ergebnis an. Erst wenn Sie zufrieden sind, ist die Arbeit für mich erledigt. Ordentlich, vollständig und ohne Rückstände.</p>
                 </div>
             </li>
 
@@ -583,10 +615,10 @@ function h(string $key): string
 
             <div class="contact-info">
                 <h2>Bereit für Ihr Projekt?</h2>
-                <p>Schreiben Sie uns oder rufen Sie einfach an – Viktor Kober meldet sich persönlich bei Ihnen. Kein Callcenter, kein automatisches System.</p>
+                <p>Schreiben Sie mir oder rufen Sie einfach an – ich melde mich persönlich bei Ihnen. Kein Callcenter, kein automatisches System.</p>
 
                 <ul class="contact-details">
-                    <li>
+                    <li class="contact-phone-vibrate">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         <div>
                             <strong>Telefon</strong>
@@ -618,7 +650,7 @@ function h(string $key): string
                     <div class="form-success" role="alert">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                         <h3>Nachricht gesendet!</h3>
-                        <p>Vielen Dank für Ihre Anfrage. Viktor Kober meldet sich zeitnah persönlich bei Ihnen.</p>
+                        <p>Vielen Dank für Ihre Anfrage. Ich melde mich zeitnah persönlich bei Ihnen.</p>
                     </div>
                 <?php else: ?>
 
@@ -718,7 +750,7 @@ function h(string $key): string
         <div class="footer-brand">
             <span class="logo-name">Viktor Kober</span>
             <span class="logo-tagline">Maler &amp; Renovierung</span>
-            <p>Zuverlässige Malerarbeiten in Büdelsdorf, Rendsburg, Eckernförde und Umgebung.</p>
+            <p>Zuverlässige Malerarbeiten in Büdelsdorf, Rendsburg, Eckernförde und Umgebung – persönlich von mir.</p>
         </div>
 
         <div class="footer-links">
