@@ -1,6 +1,6 @@
 <?php
 /**
- * Viktor Kober – Maler & Renovierungsarbeiten
+ * Viktor Kober – Raumausstatter & Renovierungsarbeiten
  * Landingpage – index.php
  */
 
@@ -113,55 +113,7 @@ function h(string $key): string
     return '';
 }
 ?>
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Malerarbeiten, Tapezierarbeiten und Renovierungen in Büdelsdorf und Umgebung. Zuverlässig, sauber und persönlich – Viktor Kober, Ihr Malerbetrieb aus der Region.">
-    <meta name="robots" content="index, follow">
-    <title>Viktor Kober – Maler &amp; Renovierungsarbeiten in Büdelsdorf</title>
-
-    <!-- Google Fonts: Clean, hochwertige Typografie -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Cloudflare Turnstile -->
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     HEADER / NAVIGATION
-═══════════════════════════════════════════════════════════════════════════ -->
-<header class="site-header" id="site-header">
-    <div class="container header-inner">
-
-        <a href="#" class="logo" aria-label="Viktor Kober – Startseite">
-            <img src="img/Viktor%20Kober.png" alt="Viktor Kober – Maler & Renovierung" class="logo-img">
-        </a>
-
-        <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
-            <ul>
-                <li><a href="#leistungen">Leistungen</a></li>
-                <li><a href="#referenzen">Referenzen</a></li>
-                <li><a href="#kundenstimmen">Kundenstimmen</a></li>
-                <li><a href="#ablauf">Ablauf</a></li>
-                <li><a href="#kontakt" class="nav-cta">Anfrage stellen</a></li>
-            </ul>
-        </nav>
-
-    </div>
-</header>
+<?php include __DIR__ . '/includes/header.php'; ?>
 
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
@@ -171,21 +123,21 @@ function h(string $key): string
 
     <!-- Video-Hintergrund -->
     <div class="hero-image" aria-hidden="true">
-        <video class="hero-video" autoplay muted loop playsinline>
-            <source src="video/Elephant_Splashes_Colorful_Confetti_On_Gradient_Orange_Loop_source_2309138.mp4" type="video/mp4">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="video/hero-bg.mp4" type="video/mp4">
         </video>
         <div class="hero-image-overlay"></div>
     </div>
 
     <div class="container hero-content">
         <div class="hero-text">
-            <p class="hero-pre">Malerbetrieb aus Büdelsdorf</p>
-            <h1 class="hero-headline">Malerarbeiten,<br>die Ihr Zuhause<br>sichtbar aufwerten.</h1>
+            <p class="hero-pre">Raumausstatter aus Büdelsdorf</p>
+            <h1 class="hero-headline">Raumgestaltung,<br>die Ihr Zuhause<br>sichtbar aufwertet.</h1>
             <p class="hero-sub">Saubere Arbeit, zuverlässige Termine und ein Ergebnis,<br class="br-desktop"> das Sie täglich erfreut – persönlich betreut von mir, Viktor Kober.</p>
 
             <div class="hero-actions">
                 <a href="#kontakt" class="btn btn-primary">Kostenlos anfragen</a>
-                <a href="tel:+49000000000" class="btn btn-secondary">
+                <a href="tel:+491743226804" class="btn btn-secondary">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                     Jetzt anrufen
                 </a>
@@ -298,7 +250,7 @@ function h(string $key): string
                 <!-- Bild: Frisch gestrichenes Wohnzimmer, helle Wandfarbe, saubere Kanten -->
                 <div class="service-image service-image--innen" aria-hidden="true"></div>
                 <div class="service-body">
-                    <h3>Malerarbeiten innen</h3>
+                    <h3>Raumgestaltung innen</h3>
                     <p>Ob einzelnes Zimmer oder ganze Wohnung – Wände und Decken werden vollflächig und gleichmäßig gestrichen. Mit sauber abgeklebten Kanten, schützenden Abdeckungen und einem Ergebnis, das sofort überzeugt.</p>
                     <a href="#kontakt" class="service-link">Anfrage stellen →</a>
                 </div>
@@ -380,22 +332,22 @@ function h(string $key): string
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--2" aria-label="Saubere Wandkante nach Anstrich"></div>
-                    <figcaption>Präziser Kantenanstrich</figcaption>
+                    <div class="gallery-image gallery-image--2" aria-label="Saubere Wandkante nach Anstrich durch Maler in Büdelsdorf"></div>
+                    <figcaption>Präziser Kantenanstrich – Büdelsdorf</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--3" aria-label="Schlafzimmer mit Strukturtapete"></div>
+                    <div class="gallery-image gallery-image--3" aria-label="Schlafzimmer mit Strukturtapete in Rendsburg"></div>
                     <figcaption>Strukturtapete Schlafzimmer, Rendsburg</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--4" aria-label="Renovierter Flur mit frischem Anstrich"></div>
-                    <figcaption>Flurrenovierung mit neuem Anstrich</figcaption>
+                    <div class="gallery-image gallery-image--4" aria-label="Renovierter Flur mit frischem Anstrich in Büdelsdorf"></div>
+                    <figcaption>Flurrenovierung mit neuem Anstrich – Büdelsdorf</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--5" aria-label="Fassade nach Außenanstrich"></div>
+                    <div class="gallery-image gallery-image--5" aria-label="Fassadenanstrich an einem Einfamilienhaus in Eckernförde"></div>
                     <figcaption>Fassadenanstrich, Eckernförde</figcaption>
                 </figure>
 
@@ -608,6 +560,178 @@ function h(string $key): string
 
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
+     EINSATZGEBIET / LOKALE SEO
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="service-area section-light" id="einsatzgebiet">
+    <div class="container">
+
+        <div class="section-intro text-center">
+            <h2>Ihr Maler &amp; Raumausstatter für Büdelsdorf und die Region</h2>
+            <p>Aus Büdelsdorf direkt zu Ihnen nach Hause – mit kurzen Wegen, schneller Reaktion und einem geschulten Blick für die Besonderheiten der Häuser und Wohnungen in Schleswig-Holstein.</p>
+        </div>
+
+        <div class="service-area-intro">
+            <p>
+                Mein Standort in <strong>Büdelsdorf</strong> liegt zentral im Kreis Rendsburg-Eckernförde. Von hier aus bin ich in wenigen Minuten in <strong>Rendsburg</strong>, schnell an der Eider und in kurzer Fahrtzeit an der Ostsee bei <strong>Eckernförde</strong>. Ob Altbauwohnung in der Rendsburger Innenstadt, Einfamilienhaus in Fockbek oder Reihenhaus in Osterrönfeld – ich kenne die Bauweisen, die typischen Herausforderungen und bringe die passende Lösung mit.
+            </p>
+            <p>
+                Ich arbeite für Privatkunden, Vermieter und Hausverwaltungen in folgenden Orten und Gemeinden rund um Büdelsdorf:
+            </p>
+        </div>
+
+        <ul class="service-area-grid">
+            <li>
+                <strong>Büdelsdorf</strong>
+                <span>Hauptstandort – Malerarbeiten, Renovierung, Tapezieren</span>
+            </li>
+            <li>
+                <strong>Rendsburg</strong>
+                <span>Altbau, Neubau, Wohnungsrenovierung</span>
+            </li>
+            <li>
+                <strong>Eckernförde</strong>
+                <span>Innenanstrich &amp; Fassade an der Ostsee</span>
+            </li>
+            <li>
+                <strong>Fockbek</strong>
+                <span>Einfamilienhäuser &amp; Sanierungen</span>
+            </li>
+            <li>
+                <strong>Osterrönfeld</strong>
+                <span>Renovierung &amp; Malerarbeiten</span>
+            </li>
+            <li>
+                <strong>Westerrönfeld</strong>
+                <span>Innen- &amp; Außenanstrich</span>
+            </li>
+            <li>
+                <strong>Schacht-Audorf</strong>
+                <span>Am Nord-Ostsee-Kanal</span>
+            </li>
+            <li>
+                <strong>Borgstedt</strong>
+                <span>Wohnungsrenovierung</span>
+            </li>
+            <li>
+                <strong>Nübbel</strong>
+                <span>Malerarbeiten im Amt Fockbek</span>
+            </li>
+            <li>
+                <strong>Jevenstedt</strong>
+                <span>Fassade &amp; Innenanstrich</span>
+            </li>
+            <li>
+                <strong>Nortorf</strong>
+                <span>Komplett-Renovierung</span>
+            </li>
+            <li>
+                <strong>Kropp</strong>
+                <span>Renovierungsarbeiten</span>
+            </li>
+            <li>
+                <strong>Owschlag</strong>
+                <span>Innen- &amp; Außenbereich</span>
+            </li>
+            <li>
+                <strong>Hohn</strong>
+                <span>Malerarbeiten &amp; Tapezieren</span>
+            </li>
+            <li>
+                <strong>Schleswig</strong>
+                <span>Raumgestaltung &amp; Fassade</span>
+            </li>
+            <li>
+                <strong>Kreis Rendsburg-Eckernförde</strong>
+                <span>Komplette Region Schleswig-Holstein</span>
+            </li>
+        </ul>
+
+        <div class="service-area-note text-center">
+            <p>Ihr Ort ist nicht dabei? Kein Problem – fragen Sie einfach an. Viele weitere Gemeinden in Schleswig-Holstein liegen im Einsatzgebiet.</p>
+            <a href="#kontakt" class="btn btn-primary">Jetzt Anfrage stellen</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     FAQ – Häufige Fragen (SEO)
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="faq section-white" id="faq">
+    <div class="container">
+
+        <div class="section-intro text-center">
+            <h2>Häufige Fragen an Ihren Maler in Büdelsdorf</h2>
+            <p>Antworten auf die Fragen, die Kundinnen und Kunden aus Büdelsdorf, Rendsburg und Umgebung mir am häufigsten stellen.</p>
+        </div>
+
+        <div class="faq-list">
+
+            <details class="faq-item">
+                <summary>In welchen Orten arbeiten Sie als Maler und Raumausstatter?</summary>
+                <div class="faq-answer">
+                    <p>Mein Hauptstandort ist <strong>Büdelsdorf</strong>. Von dort aus übernehme ich Maler-, Tapezier- und Renovierungsarbeiten in <strong>Rendsburg, Eckernförde, Fockbek, Osterrönfeld, Westerrönfeld, Schacht-Audorf, Borgstedt, Nortorf, Kropp, Owschlag, Hohn, Schleswig</strong> und in der gesamten Region <strong>Rendsburg-Eckernförde</strong> in Schleswig-Holstein. Andere Orte auf Anfrage – fragen Sie einfach an.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Ist die Besichtigung vor Ort und das Angebot kostenlos?</summary>
+                <div class="faq-answer">
+                    <p>Ja. Die Erstbesichtigung in Büdelsdorf und Umgebung ist kostenlos und unverbindlich. Sie erhalten anschließend ein schriftliches, transparentes Angebot – ohne versteckte Kosten und ohne Verpflichtung zur Beauftragung.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Welche Leistungen bietet Viktor Kober in Büdelsdorf an?</summary>
+                <div class="faq-answer">
+                    <p>Zum Leistungsspektrum gehören:</p>
+                    <ul>
+                        <li>Innenanstrich &amp; Raumgestaltung (Wände, Decken)</li>
+                        <li>Tapezierarbeiten (Vlies-, Struktur- und Fototapeten)</li>
+                        <li>Komplette Wohnungsrenovierungen</li>
+                        <li>Fassadenarbeiten &amp; Außenanstriche</li>
+                        <li>Plissees, Rollos &amp; Sonnenschutz</li>
+                        <li>Maßgefertigter Insektenschutz</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Wie schnell ist ein Termin in Büdelsdorf oder Rendsburg möglich?</summary>
+                <div class="faq-answer">
+                    <p>Anfragen werden in der Regel innerhalb eines Werktages beantwortet. Besichtigungstermine in <strong>Büdelsdorf, Rendsburg</strong> und Umgebung sind meist innerhalb weniger Tage möglich. Die konkrete Auftragsausführung richtet sich nach der aktuellen Auftragslage – Sie erhalten aber immer einen verbindlichen Termin.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Arbeiten Sie auch für Vermieter, Hausverwaltungen und Gewerbekunden?</summary>
+                <div class="faq-answer">
+                    <p>Ja. Neben Privatkunden betreue ich regelmäßig <strong>Vermieter, Hausverwaltungen und Gewerbekunden</strong> im Raum Büdelsdorf, Rendsburg und Eckernförde – zum Beispiel bei Mieterwechseln, Renovierungen von Büroräumen, Praxen oder Fassadenanstrichen an Mehrfamilienhäusern.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Wie läuft ein Auftrag von der Anfrage bis zur Übergabe ab?</summary>
+                <div class="faq-answer">
+                    <p>Der Ablauf ist einfach: Sie melden sich per Telefon, WhatsApp oder Formular. Ich komme für eine kostenlose Besichtigung vorbei und erstelle ein klares schriftliches Angebot. Nach Ihrer Zustimmung führe ich die Arbeiten termingerecht aus und wir gehen gemeinsam durch das Ergebnis. Erst wenn Sie zufrieden sind, ist der Auftrag für mich abgeschlossen.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Übernehmen Sie auch kleinere Arbeiten, zum Beispiel nur ein Zimmer streichen?</summary>
+                <div class="faq-answer">
+                    <p>Ja, auch einzelne Räume sind selbstverständlich möglich – ob Wohnzimmer, Schlafzimmer, Kinderzimmer, Flur oder Küche. Gerade bei einzelnen Zimmern lohnt sich saubere Arbeit besonders, weil der Unterschied zu Nachbarflächen sofort sichtbar wird.</p>
+                </div>
+            </details>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
      KONTAKT / CTA
 ═══════════════════════════════════════════════════════════════════════════ -->
 <section class="contact section-white" id="kontakt">
@@ -624,26 +748,26 @@ function h(string $key): string
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         <div>
                             <strong>Telefon</strong>
-                            <a href="tel:+49000000000">+49 (0) 000 000 000</a><!-- Echte Nummer eintragen -->
+                            <a href="tel:+491743226804">0174 3226804</a>
                         </div>
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                         <div>
                             <strong>WhatsApp</strong>
-                            <a href="https://wa.me/49000000000" target="_blank" rel="noopener noreferrer">Nachricht schreiben</a><!-- Echte Nummer eintragen -->
+                            <a href="https://wa.me/491743226804" target="_blank" rel="noopener noreferrer">Nachricht schreiben</a>
                         </div>
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                         <div>
                             <strong>Standort</strong>
-                            <span>Büdelsdorf und Umgebung</span>
+                            <span>Am Stadtpark 7, 24782 Büdelsdorf</span>
                         </div>
                     </li>
                 </ul>
 
-                <p class="contact-note">Erreichbar Mo – Fr, 7:00 – 18:00 Uhr.<br>Anfragen per Formular werden innerhalb eines Werktages beantwortet.</p>
+                <p class="contact-note">Erreichbar Mo – Do, 08:00 – 17:00 Uhr | Fr, 08:00 – 14:00 Uhr.<br>Anfragen per Formular werden innerhalb eines Werktages beantwortet.</p>
             </div>
 
             <div class="contact-form-wrap">
@@ -743,53 +867,4 @@ function h(string $key): string
 </section>
 
 
-<!-- ═══════════════════════════════════════════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════════════════════════════════════════ -->
-<footer class="site-footer" id="datenschutz">
-    <div class="container footer-inner">
-
-        <div class="footer-brand">
-            <img src="img/Viktor%20Kober.png" alt="Viktor Kober – Maler & Renovierung" class="footer-logo-img">
-            <p>Zuverlässige Malerarbeiten in Büdelsdorf, Rendsburg, Eckernförde und Umgebung – persönlich von mir.</p>
-        </div>
-
-        <div class="footer-links">
-            <h4>Navigation</h4>
-            <ul>
-                <li><a href="#leistungen">Leistungen</a></li>
-                <li><a href="#referenzen">Referenzen</a></li>
-                <li><a href="#kundenstimmen">Kundenstimmen</a></li>
-                <li><a href="#ablauf">Ablauf</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-contact">
-            <h4>Kontakt</h4>
-            <p>
-                <a href="tel:+49000000000">+49 (0) 000 000 000</a><br><!-- Echte Nummer eintragen -->
-                <a href="mailto:koberviktor@web.de">koberviktor@web.de</a>
-            </p>
-            <p>Büdelsdorf und Umgebung<br>Mo – Fr, 7:00 – 18:00 Uhr</p>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        <div class="container">
-            <p>&copy; <?= date('Y') ?> Viktor Kober – Maler &amp; Renovierungsarbeiten. Alle Rechte vorbehalten.</p>
-            <p><a href="#datenschutz">Datenschutz</a> · <a href="#impressum">Impressum</a></p>
-            <p class="footer-credit">Webseite erstellt von <a href="https://jasonholweg.de" target="_blank" rel="noopener noreferrer">JasonHolweg.de</a></p>
-        </div>
-    </div>
-</footer>
-
-<!-- Demo Banner -->
-<div class="demo-banner" id="demo-banner">
-    <span>DEMO – Ein Projekt von <a href="https://foerdelab.de" target="_blank" rel="noopener noreferrer">Fördelab.de</a></span>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
+<?php include __DIR__ . '/includes/footer.php'; ?>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <url>
+        <loc>https://viktorkober.de/</loc>
+        <lastmod>2026-04-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://viktorkober.de/img/Viktor%20Kober.png</image:loc>
+            <image:title>Viktor Kober – Maler &amp; Raumausstatter Büdelsdorf</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://viktorkober.de/img/Vorschau.png</image:loc>
+            <image:title>Raumgestaltung in Büdelsdorf</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://viktorkober.de/#leistungen</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://viktorkober.de/#referenzen</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://viktorkober.de/#kundenstimmen</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://viktorkober.de/#einsatzgebiet</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://viktorkober.de/#faq</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://viktorkober.de/#ablauf</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://viktorkober.de/#kontakt</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+</urlset>

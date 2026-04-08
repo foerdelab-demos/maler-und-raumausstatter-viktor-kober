@@ -1,0 +1,19 @@
+# robots.txt – Viktor Kober – Maler & Raumausstatter Büdelsdorf
+# https://viktorkober.de/
+
+User-agent: *
+Allow: /
+
+# Zugriff auf Assets erlauben (wichtig für Google Mobile Friendly / Core Web Vitals)
+Allow: /assets/
+Allow: /img/
+Allow: /video/
+
+# Server-Interna ausschließen
+Disallow: /includes/
+Disallow: /.env
+Disallow: /.htaccess
+Disallow: /deploy.sh
+
+# Sitemap
+Sitemap: https://viktorkober.de/sitemap.xml

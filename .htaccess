@@ -1,0 +1,76 @@
+# Video MIME-Typen
+AddType video/mp4 .mp4
+AddType video/webm .webm
+AddType video/ogg .ogv
+
+# Große Dateien erlauben (z.B. Videos)
+<IfModule mod_php.c>
+  php_value upload_max_filesize 100M
+  php_value post_max_size 100M
+</IfModule>
+
+# ── SEO: Komprimierung (GZIP) ─────────────────────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+    AddOutputFilterByType DEFLATE application/xml application/rss+xml application/xhtml+xml
+    AddOutputFilterByType DEFLATE image/svg+xml font/woff font/woff2
+</IfModule>
+
+# ── SEO: Browser-Caching (Core Web Vitals) ────────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault                              "access plus 1 month"
+    ExpiresByType text/html                     "access plus 0 seconds"
+    ExpiresByType text/css                      "access plus 1 month"
+    ExpiresByType application/javascript        "access plus 1 month"
+    ExpiresByType image/jpeg                    "access plus 6 months"
+    ExpiresByType image/png                     "access plus 6 months"
+    ExpiresByType image/svg+xml                 "access plus 6 months"
+    ExpiresByType image/webp                    "access plus 6 months"
+    ExpiresByType video/mp4                     "access plus 6 months"
+    ExpiresByType font/woff                     "access plus 1 year"
+    ExpiresByType font/woff2                    "access plus 1 year"
+    ExpiresByType application/xml               "access plus 1 day"
+    ExpiresByType text/xml                      "access plus 1 day"
+</IfModule>
+
+# ── SEO: Sicherheits-Header ───────────────────────────────────────────────
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# ── SEO: HTTPS & www-Weiterleitung erzwingen ──────────────────────────────
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # HTTP → HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # www. → non-www (Canonical)
+    RewriteCond %{HTTP_HOST} ^www\.viktorkober\.de$ [NC]
+    RewriteRule ^ https://viktorkober.de%{REQUEST_URI} [L,R=301]
+
+    # Trailing slash konsistent entfernen (außer bei Verzeichnissen)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ /$1 [L,R=301]
+</IfModule>
+
+# ── Zugriffsschutz auf sensible Dateien ───────────────────────────────────
+<FilesMatch "^\.(env|htaccess|gitignore)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(sh|log|sql)$">
+    Require all denied
+</FilesMatch>
+
+# ── Verzeichnis-Listing deaktivieren ──────────────────────────────────────
+Options -Indexes
+
+# ── Standard-Charset ──────────────────────────────────────────────────────
+AddDefaultCharset UTF-8
