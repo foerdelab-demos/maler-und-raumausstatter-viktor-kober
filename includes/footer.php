@@ -43,14 +43,14 @@
             <h4>Kontakt</h4>
             <p>
                 <a href="tel:+491743226804" itemprop="telephone">0174 3226804</a><br>
-                <a href="mailto:koberviktor@web.de" itemprop="email">koberviktor@web.de</a>
+                <a href="mailto:info@maler-buedelsdorf.de" itemprop="email">info@maler-buedelsdorf.de</a>
             </p>
             <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                 <span itemprop="streetAddress">Am Stadtpark 7</span><br>
                 <span itemprop="postalCode">24782</span> <span itemprop="addressLocality">Büdelsdorf</span><br>
                 <span itemprop="addressRegion">Schleswig-Holstein</span>, <span itemprop="addressCountry">Deutschland</span>
             </p>
-            <p><strong>Öffnungszeiten:</strong><br>Mo – Do, 08:00 – 17:00 Uhr<br>Fr, 08:00 – 14:00 Uhr</p>
+            <p><strong>Öffnungszeiten:</strong><br>Mo. – Do. 08:00 – 17:00 Uhr<br>Fr. 08:00 – 14:00 Uhr</p>
         </div>
 
     </div>

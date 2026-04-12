@@ -210,10 +210,24 @@ ol {
 /* Logo */
 .logo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     line-height: 1.1;
     text-decoration: none;
     flex-shrink: 0;
+}
+
+.logo-initials {
+    width: 34px;
+    height: 34px;
+    color: #c01818;
+    flex-shrink: 0;
+    transition: color var(--transition), transform var(--transition);
+}
+
+.logo:hover .logo-initials,
+.logo:focus-visible .logo-initials {
+    color: #de3b3b;
 }
 
 .logo-img {
@@ -1471,6 +1485,19 @@ ol {
 
     :root {
         --section-padding: 48px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo-initials {
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo-img {
+        height: 42px;
     }
 
     /* Hero */

@@ -70,7 +70,7 @@
         "slogan": "Raumgestaltung, die Ihr Zuhause sichtbar aufwertet.",
         "url": "https://viktorkober.de/",
         "telephone": "+491743226804",
-        "email": "koberviktor@web.de",
+        "email": "info@maler-buedelsdorf.de",
         "currenciesAccepted": "EUR",
         "paymentAccepted": "Bar, Überweisung, Rechnung",
         "priceRange": "€€",
@@ -376,6 +376,27 @@
     <div class="container header-inner">
 
         <a href="#" class="logo" aria-label="Viktor Kober – Startseite">
+            <svg class="logo-initials" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" aria-hidden="true" focusable="false">
+                <path d="
+                    M80 60
+                    C70 200, 70 300, 90 440
+                    C110 460, 140 450, 140 420
+                    C120 300, 120 200, 140 60
+                    Z
+
+                    M180 60
+                    C200 200, 210 260, 220 420
+                    C240 460, 270 450, 280 420
+                    C260 260, 250 200, 230 60
+                    Z
+
+                    M300 80
+                    C360 160, 400 220, 420 420
+                    C440 460, 470 440, 450 400
+                    C420 250, 380 160, 320 60
+                    Z
+                " fill="currentColor"/>
+            </svg>
             <img src="img/Viktor%20Kober.png" alt="Viktor Kober – Raumausstatter & Renovierung" class="logo-img">
         </a>
 

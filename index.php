@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kontakt_form'])) {
 
     // ── E-Mail versenden ──────────────────────────────────────────────────────
     if (empty($formErrors)) {
-        $to      = 'koberviktor@web.de';
+        $to      = 'info@maler-buedelsdorf.de';
         $subject = '=?UTF-8?B?' . base64_encode('Neue Anfrage über die Website: ' . $name) . '?=';
         $body    = "Neue Kontaktanfrage über die Website\n";
         $body   .= "=====================================\n\n";
@@ -131,7 +131,7 @@ function h(string $key): string
 
     <div class="container hero-content">
         <div class="hero-text">
-            <p class="hero-pre">Raumausstatter aus Büdelsdorf</p>
+            <p class="hero-pre">Maler & Raumausstatter aus Büdelsdorf</p>
             <h1 class="hero-headline">Raumgestaltung,<br>die Ihr Zuhause<br>sichtbar aufwertet.</h1>
             <p class="hero-sub">Saubere Arbeit, zuverlässige Termine und ein Ergebnis,<br class="br-desktop"> das Sie täglich erfreut – persönlich betreut von mir, Viktor Kober.</p>
 
@@ -700,7 +700,7 @@ function h(string $key): string
             <details class="faq-item">
                 <summary>Wie schnell ist ein Termin in Büdelsdorf oder Rendsburg möglich?</summary>
                 <div class="faq-answer">
-                    <p>Anfragen werden in der Regel innerhalb eines Werktages beantwortet. Besichtigungstermine in <strong>Büdelsdorf, Rendsburg</strong> und Umgebung sind meist innerhalb weniger Tage möglich. Die konkrete Auftragsausführung richtet sich nach der aktuellen Auftragslage – Sie erhalten aber immer einen verbindlichen Termin.</p>
+                    <p>Anfragen werden in der Regel zeitnah beantwortet. Besichtigungstermine in <strong>Büdelsdorf, Rendsburg</strong> und Umgebung sind meist innerhalb weniger Tage möglich. Die konkrete Auftragsausführung richtet sich nach der aktuellen Auftragslage – Sie erhalten aber immer einen verbindlichen Termin.</p>
                 </div>
             </details>
 
@@ -767,7 +767,7 @@ function h(string $key): string
                     </li>
                 </ul>
 
-                <p class="contact-note">Erreichbar Mo – Do, 08:00 – 17:00 Uhr | Fr, 08:00 – 14:00 Uhr.<br>Anfragen per Formular werden innerhalb eines Werktages beantwortet.</p>
+                <p class="contact-note">Erreichbar Mo. – Do. 08:00 – 17:00 Uhr | Fr. 08:00 – 14:00 Uhr.<br>Anfragen per Formular werden zeitnah beantwortet.</p>
             </div>
 
             <div class="contact-form-wrap">
