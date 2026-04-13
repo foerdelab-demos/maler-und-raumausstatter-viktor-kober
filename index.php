@@ -579,72 +579,51 @@ function h(string $key): string
             </p>
         </div>
 
-        <ul class="service-area-grid">
-            <li>
-                <strong>Büdelsdorf</strong>
-                <span>Hauptstandort – Malerarbeiten, Renovierung, Tapezieren</span>
-            </li>
-            <li>
-                <strong>Rendsburg</strong>
-                <span>Altbau, Neubau, Wohnungsrenovierung</span>
-            </li>
-            <li>
-                <strong>Eckernförde</strong>
-                <span>Innenanstrich &amp; Fassade an der Ostsee</span>
-            </li>
-            <li>
-                <strong>Fockbek</strong>
-                <span>Einfamilienhäuser &amp; Sanierungen</span>
-            </li>
-            <li>
-                <strong>Osterrönfeld</strong>
-                <span>Renovierung &amp; Malerarbeiten</span>
-            </li>
-            <li>
-                <strong>Westerrönfeld</strong>
-                <span>Innen- &amp; Außenanstrich</span>
-            </li>
-            <li>
-                <strong>Schacht-Audorf</strong>
-                <span>Am Nord-Ostsee-Kanal</span>
-            </li>
-            <li>
-                <strong>Borgstedt</strong>
-                <span>Wohnungsrenovierung</span>
-            </li>
-            <li>
-                <strong>Nübbel</strong>
-                <span>Malerarbeiten im Amt Fockbek</span>
-            </li>
-            <li>
-                <strong>Jevenstedt</strong>
-                <span>Fassade &amp; Innenanstrich</span>
-            </li>
-            <li>
-                <strong>Nortorf</strong>
-                <span>Komplett-Renovierung</span>
-            </li>
-            <li>
-                <strong>Kropp</strong>
-                <span>Renovierungsarbeiten</span>
-            </li>
-            <li>
-                <strong>Owschlag</strong>
-                <span>Innen- &amp; Außenbereich</span>
-            </li>
-            <li>
-                <strong>Hohn</strong>
-                <span>Malerarbeiten &amp; Tapezieren</span>
-            </li>
-            <li>
-                <strong>Schleswig</strong>
-                <span>Raumgestaltung &amp; Fassade</span>
-            </li>
-            <li>
-                <strong>Kreis Rendsburg-Eckernförde</strong>
-                <span>Komplette Region Schleswig-Holstein</span>
-            </li>
-        </ul>
+        <div class="service-area-marquee" role="region" aria-label="Standorte im Einsatzgebiet">
+            <div class="marquee-row marquee-row-top">
+                <ul class="marquee-track">
+                    <li class="marquee-item"><strong>Büdelsdorf</strong><span>Hauptstandort – Malerarbeiten, Renovierung, Tapezieren</span></li>
+                    <li class="marquee-item"><strong>Rendsburg</strong><span>Altbau, Neubau, Wohnungsrenovierung</span></li>
+                    <li class="marquee-item"><strong>Eckernförde</strong><span>Innenanstrich &amp; Fassade an der Ostsee</span></li>
+                    <li class="marquee-item"><strong>Fockbek</strong><span>Einfamilienhäuser &amp; Sanierungen</span></li>
+                    <li class="marquee-item"><strong>Osterrönfeld</strong><span>Renovierung &amp; Malerarbeiten</span></li>
+                    <li class="marquee-item"><strong>Westerrönfeld</strong><span>Innen- &amp; Außenanstrich</span></li>
+                    <li class="marquee-item"><strong>Schacht-Audorf</strong><span>Am Nord-Ostsee-Kanal</span></li>
+                    <li class="marquee-item"><strong>Borgstedt</strong><span>Wohnungsrenovierung</span></li>
+
+                    <li class="marquee-item" aria-hidden="true"><strong>Büdelsdorf</strong><span>Hauptstandort – Malerarbeiten, Renovierung, Tapezieren</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Rendsburg</strong><span>Altbau, Neubau, Wohnungsrenovierung</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Eckernförde</strong><span>Innenanstrich &amp; Fassade an der Ostsee</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Fockbek</strong><span>Einfamilienhäuser &amp; Sanierungen</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Osterrönfeld</strong><span>Renovierung &amp; Malerarbeiten</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Westerrönfeld</strong><span>Innen- &amp; Außenanstrich</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Schacht-Audorf</strong><span>Am Nord-Ostsee-Kanal</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Borgstedt</strong><span>Wohnungsrenovierung</span></li>
+                </ul>
+            </div>
+
+            <div class="marquee-row marquee-row-bottom">
+                <ul class="marquee-track">
+                    <li class="marquee-item"><strong>Nübbel</strong><span>Malerarbeiten im Amt Fockbek</span></li>
+                    <li class="marquee-item"><strong>Jevenstedt</strong><span>Fassade &amp; Innenanstrich</span></li>
+                    <li class="marquee-item"><strong>Nortorf</strong><span>Komplett-Renovierung</span></li>
+                    <li class="marquee-item"><strong>Kropp</strong><span>Renovierungsarbeiten</span></li>
+                    <li class="marquee-item"><strong>Owschlag</strong><span>Innen- &amp; Außenbereich</span></li>
+                    <li class="marquee-item"><strong>Hohn</strong><span>Malerarbeiten &amp; Tapezieren</span></li>
+                    <li class="marquee-item"><strong>Schleswig</strong><span>Raumgestaltung &amp; Fassade</span></li>
+                    <li class="marquee-item"><strong>Kreis Rendsburg-Eckernförde</strong><span>Komplette Region Schleswig-Holstein</span></li>
+
+                    <li class="marquee-item" aria-hidden="true"><strong>Nübbel</strong><span>Malerarbeiten im Amt Fockbek</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Jevenstedt</strong><span>Fassade &amp; Innenanstrich</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Nortorf</strong><span>Komplett-Renovierung</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Kropp</strong><span>Renovierungsarbeiten</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Owschlag</strong><span>Innen- &amp; Außenbereich</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Hohn</strong><span>Malerarbeiten &amp; Tapezieren</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Schleswig</strong><span>Raumgestaltung &amp; Fassade</span></li>
+                    <li class="marquee-item" aria-hidden="true"><strong>Kreis Rendsburg-Eckernförde</strong><span>Komplette Region Schleswig-Holstein</span></li>
+                </ul>
+            </div>
+        </div>
 
         <div class="service-area-note text-center">
             <p>Ihr Ort ist nicht dabei? Kein Problem – fragen Sie einfach an. Viele weitere Gemeinden in Schleswig-Holstein liegen im Einsatzgebiet.</p>
