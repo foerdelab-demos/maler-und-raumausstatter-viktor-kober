@@ -830,7 +830,7 @@ function h(string $key): string
                         <div class="cf-turnstile" data-sitekey="<?= htmlspecialchars(TURNSTILE_SITE_KEY, ENT_QUOTES, 'UTF-8') ?>" data-theme="light"></div>
 
                         <p class="form-privacy">
-                            Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten zur Bearbeitung Ihrer Anfrage zu. Details: <a href="#datenschutz">Datenschutzerklärung</a>.
+                            Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten zur Bearbeitung Ihrer Anfrage zu. Details: <a href="datenschutz.php">Datenschutzerklärung</a>.
                         </p>
 
                         <button type="submit" class="btn btn-primary btn-full">

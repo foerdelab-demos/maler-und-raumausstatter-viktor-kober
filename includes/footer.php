@@ -58,7 +58,7 @@
     <div class="footer-bottom">
         <div class="container">
             <p>&copy; <?= date('Y') ?> Viktor Kober – Raumausstatter & Renovierungsarbeiten. Alle Rechte vorbehalten.</p>
-            <p><a href="#datenschutz">Datenschutz</a> · <a href="#impressum">Impressum</a></p>
+            <p><a href="datenschutz.php">Datenschutz</a> · <a href="impressum.php">Impressum</a></p>
             <p class="footer-credit">Webseite erstellt von <a href="https://jasonholweg.de" target="_blank" rel="noopener noreferrer">JasonHolweg.de</a></p>
         </div>
     </div>
