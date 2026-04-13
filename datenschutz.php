@@ -15,6 +15,7 @@
 <header class="site-header scrolled" id="site-header">
     <div class="container header-inner">
         <a href="index.php" class="logo" aria-label="Zur Startseite">
+            <img src="img/initials-logo.svg" alt="Initiallogo Viktor Kober" class="logo-initials-asset" aria-hidden="true">
             <img src="img/Viktor%20Kober.png" alt="Viktor Kober" class="logo-img">
         </a>
         <nav class="main-nav" aria-label="Seitennavigation">
@@ -112,6 +113,10 @@
 </main>
 
 <footer class="site-footer legal-footer">
+    <div class="container legal-brand-row">
+        <img src="img/initials-logo.svg" alt="Initiallogo Viktor Kober" class="footer-logo-initials-img" aria-hidden="true">
+        <img src="img/Viktor%20Kober.png" alt="Viktor Kober" class="footer-logo-img">
+    </div>
     <div class="container footer-bottom">
         <p>&copy; <?php echo date('Y'); ?> [BETREIBERNAME]. Alle Rechte vorbehalten.</p>
         <p><a href="index.php">Startseite</a> · <a href="datenschutz.php">Datenschutz</a> · <a href="impressum.php">Impressum</a></p>

@@ -1257,6 +1257,20 @@ ol {
     color: rgba(255, 255, 255, 0.55);
 }
 
+.footer-brand-logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-initials-img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
+}
+
 .footer-logo-img {
     height: 44px;
     width: auto;
@@ -2110,6 +2124,21 @@ ol {
     margin-top: 24px;
 }
 
+.logo-initials-asset {
+    width: 34px;
+    height: 34px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.legal-brand-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 22px;
+}
+
 @media (max-width: 600px) {
     .legal-page {
         padding-top: 104px;
@@ -2117,6 +2146,11 @@ ol {
 
     .legal-content {
         padding: 24px;
+    }
+
+    .logo-initials-asset {
+        width: 28px;
+        height: 28px;
     }
 
     .legal-content h2 {

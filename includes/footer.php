@@ -9,7 +9,10 @@
     <div class="container footer-inner">
 
         <div class="footer-brand">
-            <img src="img/Viktor%20Kober.png" alt="Viktor Kober – Maler & Raumausstatter in Büdelsdorf" class="footer-logo-img" itemprop="logo">
+            <div class="footer-brand-logos">
+                <img src="img/initials-logo.svg" alt="Initiallogo Viktor Kober" class="footer-logo-initials-img" aria-hidden="true">
+                <img src="img/Viktor%20Kober.png" alt="Viktor Kober – Maler & Raumausstatter in Büdelsdorf" class="footer-logo-img" itemprop="logo">
+            </div>
             <p>Ihr <strong>Maler &amp; Raumausstatter in Büdelsdorf</strong> – zuverlässige Raumgestaltung in Büdelsdorf, Rendsburg, Eckernförde und der gesamten Region Rendsburg-Eckernförde. Persönlich betreut von Viktor Kober.</p>
         </div>
 
