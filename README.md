@@ -28,7 +28,7 @@ Viktor-Kober/
 ├── index.php              # Hauptseite (PHP-Logik + Seiteninhalt)
 ├── includes/
 │   ├── header.php         # Head, Meta-Tags & Navigation
-│   └── footer.php         # Footer, Demo-Banner & Scripts
+│   └── footer.php         # Footer & Scripts
 ├── assets/
 │   ├── style.css          # Stylesheet
 │   └── script.js          # JavaScript (Carousel, Slider, etc.)

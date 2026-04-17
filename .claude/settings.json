@@ -26,7 +26,8 @@
       "Bash(sips --setProperty formatOptions 65 /tmp/wand_src.jpg --out img/hero/wand.jpg)",
       "Bash(cwebp -q 75 img/hero/wand.jpg -o img/hero/wand.webp)",
       "Bash(sips --setProperty formatOptions 55 img/hero/wand.jpg --out img/hero/wand.jpg)",
-      "Bash(awk '{print $5}')"
+      "Bash(awk '{print $5}')",
+      "Bash(php -l includes/footer.php)"
     ]
   }
 }

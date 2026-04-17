@@ -67,11 +67,6 @@
     </div>
 </footer>
 
-<!-- Demo Banner -->
-<div class="demo-banner" id="demo-banner">
-    <span>DEMO – Ein Projekt von <a href="https://foerdelab.de" target="_blank" rel="noopener noreferrer">Fördelab.de</a></span>
-</div>
-
 <script src="assets/script.js"></script>
 </body>
 </html>
