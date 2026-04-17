@@ -493,7 +493,7 @@ ol {
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     padding-block: 80px;
     min-height: calc(100svh - 72px);
     display: flex;
@@ -523,7 +523,7 @@ ol {
     z-index: -1;
 }
 
-/* Portrait absolut positioniert: bündig an der rechten Viewport-Kante */
+/* Portrait absolut positioniert: bündig an der rechten Viewport-Kante, hinter dem Text */
 .hero-portrait {
     position: absolute;
     right: 0;
@@ -533,6 +533,7 @@ ol {
     min-width: 640px;
     z-index: 1;
     pointer-events: none;
+    opacity: 0.85;
 }
 
 /* Bodenschatten: dunkle Ellipse direkt unter dem Fahrzeug – wirkt wie Asphalt */
@@ -697,8 +698,8 @@ ol {
 .services-bg {
     position: absolute;
     left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 580px;
     max-width: 45%;
     pointer-events: none;
@@ -709,7 +710,6 @@ ol {
 
 @media (max-width: 900px) {
     .services-bg {
-        bottom: 20px;
         width: 380px;
         max-width: 75%;
         opacity: 0.08;
@@ -2119,8 +2119,8 @@ ol {
 .service-area-bg {
     position: absolute;
     left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 580px;
     max-width: 45%;
     pointer-events: none;
@@ -2138,7 +2138,6 @@ ol {
 
 @media (max-width: 900px) {
     .service-area-bg {
-        bottom: 20px;
         width: 380px;
         max-width: 75%;
         opacity: 0.08;
