@@ -590,7 +590,7 @@ ol {
     transform: translateY(-4px);
 }
 
-/* Service Bildplatzhalter – hier echte Fotos als background-image einfügen */
+/* Service Bilder – echte Projektfotos von Viktor Kober */
 .service-image {
     height: 200px;
     background-color: #d8d0c8;
@@ -599,27 +599,12 @@ ol {
     position: relative;
 }
 
-.service-image::after {
-    content: 'Demo-Bild ersetzen';
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
-    font-size: 0.65rem;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.5);
-    background: rgba(0, 0, 0, 0.25);
-    padding: 2px 8px;
-    border-radius: 4px;
-    pointer-events: none;
-}
-
-/* Farbvarianten als Platzhalter bis echte Bilder verfügbar sind */
-.service-image--innen       { background-image: url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80'); }
-.service-image--tapeten     { background-image: url('https://images.unsplash.com/photo-1615529151169-7b1ff50dc7f2?w=600&q=80'); }
-.service-image--renovierung { background-image: url('https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&q=80'); }
-.service-image--fassade     { background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80'); }
-.service-image--plissee     { background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&q=80'); }
-.service-image--insektenschutz { background-image: url('https://images.unsplash.com/photo-1604871000636-074fa5117945?w=600&q=80'); }
+.service-image--innen          { background-image: url('../img/services/raumgestaltung-innen.jpg'); }
+.service-image--tapeten        { background-image: url('../img/services/tapezierarbeiten.jpg'); }
+.service-image--renovierung    { background-image: url('../img/services/renovierungsarbeiten.jpg'); }
+.service-image--fassade        { background-image: url('../img/services/fassadenarbeiten.jpg'); }
+.service-image--plissee        { background-image: url('../img/services/plissee.jpg'); background-position: center top; }
+.service-image--insektenschutz { background-image: url('../img/services/insektenschutz.jpg'); background-position: center 30%; }
 
 .service-body {
     padding: 24px 24px 28px;
@@ -690,12 +675,17 @@ ol {
     transform: scale(1.03);
 }
 
-/* Bildplatzhalter-Farben – hier echte Fotos als background-image einfügen */
-.gallery-image--1 { background-color: #c0bab2; /* BILD: url('/images/referenz-wohnzimmer.jpg') */ }
-.gallery-image--2 { background-color: #b8c0b8; /* BILD: url('/images/referenz-kante.jpg') */ }
-.gallery-image--3 { background-color: #c0b8c0; /* BILD: url('/images/referenz-tapete.jpg') */ }
-.gallery-image--4 { background-color: #bfc0b8; /* BILD: url('/images/referenz-flur.jpg') */ }
-.gallery-image--5 { background-color: #b2bab8; /* BILD: url('/images/referenz-fassade.jpg') */ }
+/* Referenzbilder aus abgeschlossenen Projekten */
+.gallery-image--1 { background-image: url('../img/vergleich/zimmer-nachher.jpg'); }
+.gallery-image--2 { background-image: url('../img/services/tapezierarbeiten.jpg'); }
+.gallery-image--3 { background-image: url('../img/gallery/fototapete-schmetterlinge.jpg'); }
+.gallery-image--4 { background-image: url('../img/gallery/spachteltechnik.jpg'); }
+.gallery-image--5 { background-image: url('../img/vergleich/fassade-nachher.jpg'); }
+.gallery-image--6 { background-image: url('../img/gallery/fototapete-skyline.jpg'); }
+.gallery-image--7 { background-image: url('../img/gallery/plissee-office.jpg'); }
+.gallery-image--8 { background-image: url('../img/vergleich/wohnzimmer-nachher.jpg'); }
+.gallery-image--9 { background-image: url('../img/gallery/plissee-duette.jpg'); }
+.gallery-image--10 { background-image: url('../img/gallery/insektenschutz-pendeltuer.jpg'); }
 
 .gallery-item figcaption {
     position: absolute;
@@ -1347,27 +1337,27 @@ ol {
 
 .footer-links a {
     font-size: 0.9rem;
-    color: #d43a3b;
+    color: rgba(255, 255, 255, 0.6);
     transition: color var(--transition);
 }
 
 .footer-links a:hover {
-    color: #ef6768;
+    color: #ffffff;
 }
 
 .footer-contact p {
     font-size: 0.9rem;
     line-height: 1.7;
-    color: #d43a3b;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-contact a {
-    color: #d43a3b;
+    color: rgba(255, 255, 255, 0.6);
     transition: color var(--transition);
 }
 
 .footer-contact a:hover {
-    color: #ef6768;
+    color: #ffffff;
 }
 
 .footer-bottom {
@@ -1397,19 +1387,18 @@ ol {
 .footer-credit {
     width: 100%;
     text-align: center;
-    font-size: 0.72rem;
-    color: rgba(255, 255, 255, 0.25);
+    font-size: 0.68rem;
+    color: rgba(255, 255, 255, 0.2);
     margin-top: 4px;
 }
 
 .footer-credit a {
-    color: rgba(255, 255, 255, 0.35);
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    color: rgba(255, 255, 255, 0.24);
+    text-decoration: none;
 }
 
 .footer-credit a:hover {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.42);
 }
 
 /* Demo Banner */
@@ -1861,6 +1850,51 @@ ol {
     .gallery-slide .gallery-image {
         height: 260px;
     }
+    .gallery-split {
+        height: 260px !important;
+    }
+}
+
+/* Vorher/Nachher Split innerhalb eines Gallery-Slides */
+.gallery-split {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    gap: 2px;
+    background: #000;
+}
+
+.gallery-split-half {
+    position: relative;
+    flex: 1 1 50%;
+    overflow: hidden;
+}
+
+.gallery-split-half img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-split-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+}
+
+.gallery-split-tag--after {
+    background: var(--color-red);
 }
 
 

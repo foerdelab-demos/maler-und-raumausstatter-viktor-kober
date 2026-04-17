@@ -62,7 +62,7 @@
         <div class="container">
             <p>&copy; <?= date('Y') ?> Viktor Kober – Raumausstatter & Renovierungsarbeiten. Alle Rechte vorbehalten.</p>
             <p><a href="datenschutz.php">Datenschutz</a> · <a href="impressum.php">Impressum</a></p>
-            <p class="footer-credit">Webseite erstellt von <a href="https://jasonholweg.de" target="_blank" rel="noopener noreferrer">JasonHolweg.de</a></p>
+            <p class="footer-credit">Seite erstellt von Fördelab · <a href="https://foerdelab.de" target="_blank" rel="noopener noreferrer">foerdelab.de</a> · <a href="https://fördelab.de" target="_blank" rel="noopener noreferrer">fördelab.de</a></p>
         </div>
     </div>
 </footer>

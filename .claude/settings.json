@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -l /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/index.php)",
+      "Bash(php -S localhost:8765 -t .)",
+      "Bash(echo \"Server PID: $!\" sleep 1 curl -sI http://localhost:8765/)",
+      "Bash(curl -s http://localhost:8765/ -o /tmp/index-rendered.html)",
+      "Bash(curl -sI http://localhost:8765/img/services/raumgestaltung-innen.jpg)",
+      "Bash(curl -sI http://localhost:8765/img/vergleich/zimmer-vorher.jpg)",
+      "Bash(curl -sI http://localhost:8765/img/gallery/fototapete-schmetterlinge.jpg)",
+      "Bash(curl -sI http://localhost:8765/__TRACKED_VAR__)",
+      "Bash(bash -c 'for path in \\\\ *)",
+      "Bash(kill 78450)",
+      "Bash(sips --version)",
+      "Bash(sips --setProperty formatOptions 82 /tmp/wv.jpg --out \"img/vergleich/wohnzimmer-vorher.jpg\")",
+      "Bash(sips --setProperty formatOptions 82 /tmp/wn.jpg --out \"img/vergleich/wohnzimmer-nachher.jpg\")"
+    ]
+  }
+}

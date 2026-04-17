@@ -324,28 +324,85 @@ function h(string $key): string
             <div class="gallery-track" id="gallery-track">
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--1" aria-label="Renoviertes Wohnzimmer, Büdelsdorf"></div>
-                    <figcaption>Wohnzimmer-Renovierung, Büdelsdorf</figcaption>
+                    <div class="gallery-image gallery-image--1" aria-label="Frisch renoviertes Zimmer mit neuem Anstrich und Bodenbelag"></div>
+                    <figcaption>Komplett-Renovierung Zimmer – Büdelsdorf</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--2" aria-label="Saubere Wandkante nach Anstrich durch Maler in Büdelsdorf"></div>
-                    <figcaption>Präziser Kantenanstrich – Büdelsdorf</figcaption>
+                    <div class="gallery-split" aria-label="Vorher und Nachher einer Wohnungsrenovierung">
+                        <div class="gallery-split-half">
+                            <img src="img/vergleich/zimmer-vorher.jpg" alt="Vorher – Zimmer vor der Renovierung" loading="lazy">
+                            <span class="gallery-split-tag">Vorher</span>
+                        </div>
+                        <div class="gallery-split-half">
+                            <img src="img/vergleich/zimmer-nachher.jpg" alt="Nachher – fertig renoviertes Zimmer" loading="lazy">
+                            <span class="gallery-split-tag gallery-split-tag--after">Nachher</span>
+                        </div>
+                    </div>
+                    <figcaption>Vorher / Nachher – Wohnungsrenovierung, Büdelsdorf</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--3" aria-label="Schlafzimmer mit Strukturtapete in Rendsburg"></div>
-                    <figcaption>Strukturtapete Schlafzimmer, Rendsburg</figcaption>
+                    <div class="gallery-image gallery-image--2" aria-label="Treppenhaus mit gestreifter Mustertapete"></div>
+                    <figcaption>Streifentapete im Treppenhaus</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--4" aria-label="Renovierter Flur mit frischem Anstrich in Büdelsdorf"></div>
-                    <figcaption>Flurrenovierung mit neuem Anstrich – Büdelsdorf</figcaption>
+                    <div class="gallery-image gallery-image--3" aria-label="Kinderzimmer mit Schmetterlings-Fototapete"></div>
+                    <figcaption>Fototapete Kinderzimmer</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--5" aria-label="Fassadenanstrich an einem Einfamilienhaus in Eckernförde"></div>
-                    <figcaption>Fassadenanstrich, Eckernförde</figcaption>
+                    <div class="gallery-image gallery-image--4" aria-label="Moderne Spachteltechnik als Akzentwand"></div>
+                    <figcaption>Spachteltechnik – Akzentwand in Beton-Optik</figcaption>
+                </figure>
+
+                <figure class="gallery-slide">
+                    <div class="gallery-split" aria-label="Vorher und Nachher Fassadenanstrich">
+                        <div class="gallery-split-half">
+                            <img src="img/vergleich/fassade-vorher.jpg" alt="Vorher – Fassade vor dem Anstrich" loading="lazy">
+                            <span class="gallery-split-tag">Vorher</span>
+                        </div>
+                        <div class="gallery-split-half">
+                            <img src="img/vergleich/fassade-nachher.jpg" alt="Nachher – frisch gestrichene Fassade" loading="lazy">
+                            <span class="gallery-split-tag gallery-split-tag--after">Nachher</span>
+                        </div>
+                    </div>
+                    <figcaption>Vorher / Nachher – Fassadenanstrich</figcaption>
+                </figure>
+
+                <figure class="gallery-slide">
+                    <div class="gallery-image gallery-image--6" aria-label="Skyline-Fototapete New York"></div>
+                    <figcaption>Fototapete – Skyline-Motiv</figcaption>
+                </figure>
+
+                <figure class="gallery-slide">
+                    <div class="gallery-image gallery-image--7" aria-label="Home-Office mit Plissee-Sonnenschutz"></div>
+                    <figcaption>Plissee-Montage – Home-Office</figcaption>
+                </figure>
+
+                <figure class="gallery-slide">
+                    <div class="gallery-split" aria-label="Vorher und Nachher Wohnzimmer-Renovierung">
+                        <div class="gallery-split-half">
+                            <img src="img/vergleich/wohnzimmer-vorher.jpg" alt="Vorher – Wohnzimmer im Rohzustand" loading="lazy">
+                            <span class="gallery-split-tag">Vorher</span>
+                        </div>
+                        <div class="gallery-split-half">
+                            <img src="img/vergleich/wohnzimmer-nachher.jpg" alt="Nachher – fertiges Wohnzimmer" loading="lazy">
+                            <span class="gallery-split-tag gallery-split-tag--after">Nachher</span>
+                        </div>
+                    </div>
+                    <figcaption>Vorher / Nachher – Wohnzimmer-Renovierung</figcaption>
+                </figure>
+
+                <figure class="gallery-slide">
+                    <div class="gallery-image gallery-image--9" aria-label="Kinderzimmer mit rosa Duette-Plissee"></div>
+                    <figcaption>Duette-Plissee – Kinderzimmer</figcaption>
+                </figure>
+
+                <figure class="gallery-slide">
+                    <div class="gallery-image gallery-image--10" aria-label="Insektenschutz-Pendeltür zur Terrasse"></div>
+                    <figcaption>Insektenschutz-Pendeltür</figcaption>
                 </figure>
 
             </div>
