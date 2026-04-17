@@ -121,8 +121,21 @@ function h(string $key): string
 ═══════════════════════════════════════════════════════════════════════════ -->
 <section class="hero" id="hero">
 
-    <!-- Animierter Hintergrund -->
+    <!-- Animierter Hintergrund: Pinselstriche bemalen die Wand -->
     <div class="hero-image" aria-hidden="true">
+        <svg class="hero-paint" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="paintRough" x="-10%" y="-10%" width="120%" height="120%">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+                    <feDisplacementMap in="SourceGraphic" scale="6"/>
+                </filter>
+            </defs>
+            <g filter="url(#paintRough)">
+                <path class="paint-stroke paint-stroke--1" d="M -80 260 C 260 190, 640 320, 980 230 S 1520 300, 1720 240" />
+                <path class="paint-stroke paint-stroke--2" d="M -80 560 C 320 620, 720 480, 1100 580 S 1500 520, 1720 600" />
+                <path class="paint-stroke paint-stroke--3" d="M -80 780 C 260 720, 680 840, 1040 760 S 1480 820, 1720 740" />
+            </g>
+        </svg>
         <div class="hero-image-overlay"></div>
     </div>
 
