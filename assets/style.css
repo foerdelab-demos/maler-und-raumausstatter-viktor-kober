@@ -379,15 +379,15 @@ ol {
     overflow: hidden;
 }
 
-/* Foto-Layer: echte Wand als "Leinwand" für die Pinselstriche */
+/* Foto-Layer: weiße Backsteinwand als echte "Leinwand" für die Pinselstriche */
 .hero-image-photo {
     position: absolute;
     inset: 0;
-    background-image: url('../img/services/renovierungsarbeiten.jpg');
+    background-image: url('../img/hero/wand.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.45;
-    filter: saturate(0.75) contrast(1.05);
+    opacity: 1;
+    filter: brightness(0.32) saturate(0.85) contrast(1.1);
     transform: scale(1.02);
     animation: heroKenBurns 24s ease-in-out infinite alternate;
     will-change: transform;

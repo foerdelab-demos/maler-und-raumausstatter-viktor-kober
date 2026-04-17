@@ -17,7 +17,16 @@
       "Bash(php -l index.php)",
       "Bash(echo \"Server PID: $!\" sleep 1 curl -s http://localhost:8765/)",
       "Bash(curl -s http://localhost:8765/assets/style.css)",
-      "Bash(kill 79386)"
+      "Bash(kill 79386)",
+      "Bash(sips -g pixelWidth -g pixelHeight img/wand.jpg)",
+      "Bash(sips --resampleHeightWidthMax 1920 --setProperty formatOptions 85 img/wand.jpg --out img/hero/wand.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight img/hero/wand.jpg)",
+      "Bash(sips --setProperty formatOptions 78 img/hero/wand.jpg --out img/hero/wand.jpg)",
+      "Bash(awk '{print $5\" \"$9}')",
+      "Bash(sips --setProperty formatOptions 65 /tmp/wand_src.jpg --out img/hero/wand.jpg)",
+      "Bash(cwebp -q 75 img/hero/wand.jpg -o img/hero/wand.webp)",
+      "Bash(sips --setProperty formatOptions 55 img/hero/wand.jpg --out img/hero/wand.jpg)",
+      "Bash(awk '{print $5}')"
     ]
   }
 }
