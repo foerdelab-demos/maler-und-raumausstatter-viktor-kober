@@ -506,6 +506,23 @@ ol {
     z-index: 2;
 }
 
+/* Weicher dunkler Verlauf hinter dem Text – Lesbarkeit über dem Bild */
+.hero-text::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -60px;
+    right: -120px;
+    bottom: -40px;
+    background: radial-gradient(ellipse at 30% 50%,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.45) 45%,
+        rgba(0, 0, 0, 0) 75%);
+    filter: blur(20px);
+    pointer-events: none;
+    z-index: -1;
+}
+
 /* Portrait absolut positioniert: bündig an der rechten Viewport-Kante */
 .hero-portrait {
     position: absolute;
@@ -576,6 +593,7 @@ ol {
     line-height: 1.12;
     letter-spacing: -0.02em;
     margin-bottom: 24px;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55);
 }
 
 .hero-sub {
@@ -583,6 +601,7 @@ ol {
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.65;
     margin-bottom: 36px;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .br-desktop {
