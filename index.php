@@ -173,13 +173,13 @@ function h(string $key): string
                 </li>
             </ul>
         </div>
+    </div>
 
-        <div class="hero-portrait" aria-hidden="true">
-            <picture>
-                <source srcset="img/team/viktor.webp" type="image/webp">
-                <img src="img/team/viktor.png" alt="Viktor Kober vor seinem Firmenauto" loading="eager" decoding="async">
-            </picture>
-        </div>
+    <div class="hero-portrait" aria-hidden="true">
+        <picture>
+            <source srcset="img/team/viktor.webp" type="image/webp">
+            <img src="img/team/viktor.png" alt="Viktor Kober vor seinem Firmenauto" loading="eager" decoding="async">
+        </picture>
     </div>
 
 </section>

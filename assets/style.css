@@ -506,10 +506,10 @@ ol {
     z-index: 2;
 }
 
-/* Portrait absolut positioniert: so lässt es sich unabhängig vom Container groß skalieren */
+/* Portrait absolut positioniert: bündig an der rechten Viewport-Kante */
 .hero-portrait {
     position: absolute;
-    right: -40px;
+    right: 0;
     bottom: 0;
     width: 60vw;
     max-width: 1100px;
