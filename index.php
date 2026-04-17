@@ -123,6 +123,7 @@ function h(string $key): string
 
     <!-- Animierter Hintergrund: Pinselstriche bemalen die Wand -->
     <div class="hero-image" aria-hidden="true">
+        <div class="hero-image-photo"></div>
         <svg class="hero-paint" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <filter id="paintRough" x="-10%" y="-10%" width="120%" height="120%">

@@ -379,6 +379,25 @@ ol {
     overflow: hidden;
 }
 
+/* Foto-Layer: echte Wand als "Leinwand" für die Pinselstriche */
+.hero-image-photo {
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/services/renovierungsarbeiten.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.45;
+    filter: saturate(0.75) contrast(1.05);
+    transform: scale(1.02);
+    animation: heroKenBurns 24s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+@keyframes heroKenBurns {
+    0%   { transform: scale(1.02) translate3d(0, 0, 0); }
+    100% { transform: scale(1.12) translate3d(-2%, -1%, 0); }
+}
+
 /* SVG-Pinselstriche: werden via stroke-dashoffset "gemalt" */
 .hero-paint {
     position: absolute;
@@ -2081,9 +2100,12 @@ ol {
 
 @media (prefers-reduced-motion: reduce) {
     .hero-image::before,
-    .paint-stroke {
+    .paint-stroke,
+    .hero-image-photo {
         animation: none;
         transform: none;
+    }
+    .paint-stroke {
         opacity: 0.4;
         stroke-dashoffset: 0;
     }
