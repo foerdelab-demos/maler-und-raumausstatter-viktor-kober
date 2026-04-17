@@ -30,7 +30,8 @@
       "Bash(php -l includes/footer.php)",
       "Bash(sips -g pixelWidth -g pixelHeight img/Viktor.png)",
       "Bash(sips --resampleWidth 1200 img/Viktor.png --out img/team/viktor.png)",
-      "Bash(cwebp -q 85 -alpha_q 90 img/team/viktor.png -o img/team/viktor.webp)"
+      "Bash(cwebp -q 85 -alpha_q 90 img/team/viktor.png -o img/team/viktor.webp)",
+      "Bash(find . -type f -name \"*.php\" -not -path \"./.git/*\" -exec wc -c {} \\\\;)"
     ]
   }
 }
