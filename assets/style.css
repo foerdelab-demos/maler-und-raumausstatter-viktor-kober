@@ -568,6 +568,11 @@ ol {
     animation: heroPortraitIn 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
+/* Mobile-only Portrait: nur Viktor (ohne Auto), unten rechts in der Hero – sorgt auch auf kleinen Screens für Persönlichkeit */
+.hero-portrait-mobile {
+    display: none;
+}
+
 @keyframes heroPortraitIn {
     0%   { opacity: 0; transform: translateY(24px) scale(0.98); }
     100% { opacity: 1; transform: translateY(0) scale(1); }
@@ -1586,6 +1591,54 @@ ol {
         display: none;
     }
 
+    /* Mobile: schlankes Viktor-Portrait unten rechts in der Hero */
+    .hero-portrait-mobile {
+        display: block;
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+        width: 38vw;
+        max-width: 240px;
+        min-width: 160px;
+        z-index: 1;
+        pointer-events: none;
+        opacity: 0.95;
+        animation: heroPortraitIn 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    .hero-portrait-mobile img,
+    .hero-portrait-mobile picture {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero-portrait-mobile::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 4%;
+        width: 70%;
+        height: 18px;
+        transform: translateX(-50%);
+        background: radial-gradient(ellipse at center,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.35) 45%,
+            rgba(0, 0, 0, 0) 75%);
+        filter: blur(8px);
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    /* Text: rechts Platz lassen, damit Viktor und Inhalt sich nicht überlagern */
+    .hero-text {
+        max-width: calc(100% - 180px);
+    }
+
+    .hero-trust {
+        max-width: calc(100% - 180px);
+    }
+
     /* Navigation */
     .nav-toggle {
         display: flex;
@@ -1716,6 +1769,19 @@ ol {
     .hero-actions .btn {
         width: 100%;
         justify-content: center;
+    }
+
+    /* Hero Portrait (mobile): kleiner und dezenter, damit Text auch bei 375px sauber bleibt */
+    .hero-portrait-mobile {
+        width: 32vw;
+        max-width: 180px;
+        min-width: 130px;
+        opacity: 0.55;
+    }
+
+    .hero-text,
+    .hero-trust {
+        max-width: 100%;
     }
 
     /* Grids: 1 Spalte */

@@ -182,6 +182,13 @@ function h(string $key): string
         </picture>
     </div>
 
+    <div class="hero-portrait-mobile" aria-hidden="true">
+        <picture>
+            <source srcset="img/team/viktor-only.webp" type="image/webp">
+            <img src="img/team/viktor-only.png" alt="Viktor Kober" loading="eager" decoding="async">
+        </picture>
+    </div>
+
 </section>
 
 
