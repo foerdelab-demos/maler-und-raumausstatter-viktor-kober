@@ -387,7 +387,7 @@ ol {
     background-size: cover;
     background-position: center;
     opacity: 1;
-    filter: brightness(0.32) saturate(0.85) contrast(1.1);
+    filter: brightness(0.45) saturate(0.85) contrast(1.1);
     transform: scale(1.02);
     animation: heroKenBurns 24s ease-in-out infinite alternate;
     will-change: transform;
