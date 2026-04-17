@@ -12,22 +12,6 @@
 (function () {
     'use strict';
 
-    /* ── 0. Hero-Video Autoplay sicherstellen ───────────────────────────────── */
-    const heroVideo = document.querySelector('.hero-video');
-    if (heroVideo) {
-        heroVideo.muted = true;
-        const playPromise = heroVideo.play();
-        if (playPromise !== undefined) {
-            playPromise.catch(function () {
-                // Erneut versuchen nach User-Interaktion
-                document.addEventListener('click', function startVideo() {
-                    heroVideo.play();
-                    document.removeEventListener('click', startVideo);
-                }, { once: true });
-            });
-        }
-    }
-
     /* ── 1. Mobiles Menü ────────────────────────────────────────────────────── */
     const navToggle = document.getElementById('nav-toggle');
     const mainNav   = document.getElementById('main-nav');

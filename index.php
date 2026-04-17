@@ -121,11 +121,8 @@ function h(string $key): string
 ═══════════════════════════════════════════════════════════════════════════ -->
 <section class="hero" id="hero">
 
-    <!-- Video-Hintergrund -->
+    <!-- Animierter Hintergrund -->
     <div class="hero-image" aria-hidden="true">
-        <video class="hero-video" autoplay muted loop playsinline preload="auto">
-            <source src="video/hero-bg.mp4" type="video/mp4">
-        </video>
         <div class="hero-image-overlay"></div>
     </div>
 

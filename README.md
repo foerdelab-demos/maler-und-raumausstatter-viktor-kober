@@ -10,7 +10,7 @@ Raumgestaltung, Tapezierarbeiten, Renovierungen, Fassadenarbeiten, Plissee & Ins
 ## Funktionen
 
 - **Responsive Design** – optimiert für Desktop, Tablet & Smartphone
-- **Hero-Video** – aufmerksamkeitsstarker Einstieg mit Hintergrundvideo
+- **Animierter Hero-Hintergrund** – dezente, malerische Bewegung im Seitenkopf
 - **Leistungsübersicht** – alle Services auf einen Blick
 - **Referenz-Galerie** – Carousel mit abgeschlossenen Projekten
 - **Vorher/Nachher-Slider** – interaktiver Vergleich
@@ -33,7 +33,6 @@ Viktor-Kober/
 │   ├── style.css          # Stylesheet
 │   └── script.js          # JavaScript (Carousel, Slider, etc.)
 ├── img/                   # Bilder & Logos
-├── video/                 # Hero-Hintergrundvideo
 ├── deploy.sh              # Deployment-Script
 └── README.md
 ```
