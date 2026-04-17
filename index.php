@@ -173,6 +173,13 @@ function h(string $key): string
                 </li>
             </ul>
         </div>
+
+        <div class="hero-portrait" aria-hidden="true">
+            <picture>
+                <source srcset="img/team/viktor.webp" type="image/webp">
+                <img src="img/team/viktor.png" alt="Viktor Kober vor seinem Firmenauto" loading="eager" decoding="async">
+            </picture>
+        </div>
     </div>
 
 </section>
@@ -248,6 +255,12 @@ function h(string $key): string
      LEISTUNGEN
 ═══════════════════════════════════════════════════════════════════════════ -->
 <section class="services section-white" id="leistungen">
+    <div class="services-bg" aria-hidden="true">
+        <picture>
+            <source srcset="img/team/viktor.webp" type="image/webp">
+            <img src="img/team/viktor.png" alt="" loading="lazy" decoding="async">
+        </picture>
+    </div>
     <div class="container">
 
         <div class="section-intro text-center">
@@ -338,17 +351,17 @@ function h(string $key): string
             <div class="gallery-track" id="gallery-track">
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--1" aria-label="Frisch renoviertes Zimmer mit neuem Anstrich und Bodenbelag"></div>
+                    <div class="gallery-image gallery-image--1 lightbox-trigger" role="button" tabindex="0" aria-label="Frisch renoviertes Zimmer mit neuem Anstrich und Bodenbelag öffnen" data-lightbox-src="img/vergleich/zimmer-nachher.jpg" data-lightbox-caption="Komplett-Renovierung Zimmer – Büdelsdorf"></div>
                     <figcaption>Komplett-Renovierung Zimmer – Büdelsdorf</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
                     <div class="gallery-split" aria-label="Vorher und Nachher einer Wohnungsrenovierung">
-                        <div class="gallery-split-half">
+                        <div class="gallery-split-half lightbox-trigger" role="button" tabindex="0" data-lightbox-src="img/vergleich/zimmer-vorher.jpg" data-lightbox-caption="Vorher – Wohnungsrenovierung, Büdelsdorf">
                             <img src="img/vergleich/zimmer-vorher.jpg" alt="Vorher – Zimmer vor der Renovierung" loading="lazy">
                             <span class="gallery-split-tag">Vorher</span>
                         </div>
-                        <div class="gallery-split-half">
+                        <div class="gallery-split-half lightbox-trigger" role="button" tabindex="0" data-lightbox-src="img/vergleich/zimmer-nachher.jpg" data-lightbox-caption="Nachher – Wohnungsrenovierung, Büdelsdorf">
                             <img src="img/vergleich/zimmer-nachher.jpg" alt="Nachher – fertig renoviertes Zimmer" loading="lazy">
                             <span class="gallery-split-tag gallery-split-tag--after">Nachher</span>
                         </div>
@@ -357,27 +370,27 @@ function h(string $key): string
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--2" aria-label="Treppenhaus mit gestreifter Mustertapete"></div>
+                    <div class="gallery-image gallery-image--2 lightbox-trigger" role="button" tabindex="0" aria-label="Streifentapete im Treppenhaus öffnen" data-lightbox-src="img/services/tapezierarbeiten.jpg" data-lightbox-caption="Streifentapete im Treppenhaus"></div>
                     <figcaption>Streifentapete im Treppenhaus</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--3" aria-label="Kinderzimmer mit Schmetterlings-Fototapete"></div>
+                    <div class="gallery-image gallery-image--3 lightbox-trigger" role="button" tabindex="0" aria-label="Fototapete Kinderzimmer öffnen" data-lightbox-src="img/gallery/fototapete-schmetterlinge.jpg" data-lightbox-caption="Fototapete Kinderzimmer"></div>
                     <figcaption>Fototapete Kinderzimmer</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--4" aria-label="Moderne Spachteltechnik als Akzentwand"></div>
+                    <div class="gallery-image gallery-image--4 lightbox-trigger" role="button" tabindex="0" aria-label="Spachteltechnik öffnen" data-lightbox-src="img/gallery/spachteltechnik.jpg" data-lightbox-caption="Spachteltechnik – Akzentwand in Beton-Optik"></div>
                     <figcaption>Spachteltechnik – Akzentwand in Beton-Optik</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
                     <div class="gallery-split" aria-label="Vorher und Nachher Fassadenanstrich">
-                        <div class="gallery-split-half">
+                        <div class="gallery-split-half lightbox-trigger" role="button" tabindex="0" data-lightbox-src="img/vergleich/fassade-vorher.jpg" data-lightbox-caption="Vorher – Fassadenanstrich">
                             <img src="img/vergleich/fassade-vorher.jpg" alt="Vorher – Fassade vor dem Anstrich" loading="lazy">
                             <span class="gallery-split-tag">Vorher</span>
                         </div>
-                        <div class="gallery-split-half">
+                        <div class="gallery-split-half lightbox-trigger" role="button" tabindex="0" data-lightbox-src="img/vergleich/fassade-nachher.jpg" data-lightbox-caption="Nachher – Fassadenanstrich">
                             <img src="img/vergleich/fassade-nachher.jpg" alt="Nachher – frisch gestrichene Fassade" loading="lazy">
                             <span class="gallery-split-tag gallery-split-tag--after">Nachher</span>
                         </div>
@@ -386,22 +399,22 @@ function h(string $key): string
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--6" aria-label="Skyline-Fototapete New York"></div>
+                    <div class="gallery-image gallery-image--6 lightbox-trigger" role="button" tabindex="0" aria-label="Skyline-Fototapete öffnen" data-lightbox-src="img/gallery/fototapete-skyline.jpg" data-lightbox-caption="Fototapete – Skyline-Motiv"></div>
                     <figcaption>Fototapete – Skyline-Motiv</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--7" aria-label="Home-Office mit Plissee-Sonnenschutz"></div>
+                    <div class="gallery-image gallery-image--7 lightbox-trigger" role="button" tabindex="0" aria-label="Plissee im Home-Office öffnen" data-lightbox-src="img/gallery/plissee-office.jpg" data-lightbox-caption="Plissee-Montage – Home-Office"></div>
                     <figcaption>Plissee-Montage – Home-Office</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
                     <div class="gallery-split" aria-label="Vorher und Nachher Wohnzimmer-Renovierung">
-                        <div class="gallery-split-half">
+                        <div class="gallery-split-half lightbox-trigger" role="button" tabindex="0" data-lightbox-src="img/vergleich/wohnzimmer-vorher.jpg" data-lightbox-caption="Vorher – Wohnzimmer-Renovierung">
                             <img src="img/vergleich/wohnzimmer-vorher.jpg" alt="Vorher – Wohnzimmer im Rohzustand" loading="lazy">
                             <span class="gallery-split-tag">Vorher</span>
                         </div>
-                        <div class="gallery-split-half">
+                        <div class="gallery-split-half lightbox-trigger" role="button" tabindex="0" data-lightbox-src="img/vergleich/wohnzimmer-nachher.jpg" data-lightbox-caption="Nachher – Wohnzimmer-Renovierung">
                             <img src="img/vergleich/wohnzimmer-nachher.jpg" alt="Nachher – fertiges Wohnzimmer" loading="lazy">
                             <span class="gallery-split-tag gallery-split-tag--after">Nachher</span>
                         </div>
@@ -410,12 +423,12 @@ function h(string $key): string
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--9" aria-label="Kinderzimmer mit rosa Duette-Plissee"></div>
+                    <div class="gallery-image gallery-image--9 lightbox-trigger" role="button" tabindex="0" aria-label="Duette-Plissee Kinderzimmer öffnen" data-lightbox-src="img/gallery/plissee-duette.jpg" data-lightbox-caption="Duette-Plissee – Kinderzimmer"></div>
                     <figcaption>Duette-Plissee – Kinderzimmer</figcaption>
                 </figure>
 
                 <figure class="gallery-slide">
-                    <div class="gallery-image gallery-image--10" aria-label="Insektenschutz-Pendeltür zur Terrasse"></div>
+                    <div class="gallery-image gallery-image--10 lightbox-trigger" role="button" tabindex="0" aria-label="Insektenschutz-Pendeltür öffnen" data-lightbox-src="img/gallery/insektenschutz-pendeltuer.jpg" data-lightbox-caption="Insektenschutz-Pendeltür"></div>
                     <figcaption>Insektenschutz-Pendeltür</figcaption>
                 </figure>
 

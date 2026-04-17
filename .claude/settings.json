@@ -27,7 +27,10 @@
       "Bash(cwebp -q 75 img/hero/wand.jpg -o img/hero/wand.webp)",
       "Bash(sips --setProperty formatOptions 55 img/hero/wand.jpg --out img/hero/wand.jpg)",
       "Bash(awk '{print $5}')",
-      "Bash(php -l includes/footer.php)"
+      "Bash(php -l includes/footer.php)",
+      "Bash(sips -g pixelWidth -g pixelHeight img/Viktor.png)",
+      "Bash(sips --resampleWidth 1200 img/Viktor.png --out img/team/viktor.png)",
+      "Bash(cwebp -q 85 -alpha_q 90 img/team/viktor.png -o img/team/viktor.webp)"
     ]
   }
 }

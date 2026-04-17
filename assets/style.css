@@ -487,10 +487,38 @@ ol {
     position: relative;
     z-index: 1;
     padding-block: 80px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
 }
 
 .hero-text {
     max-width: 620px;
+    flex: 1 1 55%;
+    min-width: 0;
+}
+
+.hero-portrait {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 0;
+}
+
+.hero-portrait img,
+.hero-portrait picture {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.55));
+    animation: heroPortraitIn 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes heroPortraitIn {
+    0%   { opacity: 0; transform: translateX(32px); }
+    100% { opacity: 1; transform: translateX(0); }
 }
 
 .hero-pre {
@@ -607,10 +635,61 @@ ol {
 /* ═══════════════════════════════════════════════════════════════════════════
    LEISTUNGEN
 ═══════════════════════════════════════════════════════════════════════════ */
+/* Services-Section: Viktor als dezentes Hintergrund-Element */
+.services {
+    position: relative;
+    overflow: hidden;
+}
+
+.services-bg {
+    position: absolute;
+    right: -60px;
+    bottom: 0;
+    width: 580px;
+    max-width: 45%;
+    pointer-events: none;
+    opacity: 0.1;
+    z-index: 0;
+    mix-blend-mode: multiply;
+}
+
+@media (max-width: 900px) {
+    .services-bg {
+        right: -40px;
+        bottom: 20px;
+        width: 380px;
+        max-width: 75%;
+        opacity: 0.08;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-bg {
+        right: -30px;
+        width: 300px;
+        max-width: 85%;
+        opacity: 0.07;
+    }
+}
+
+.services-bg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(0.4);
+}
+
+.services .container {
+    position: relative;
+    z-index: 1;
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
+    position: relative;
+    z-index: 1;
 }
 
 .service-card {
@@ -1444,6 +1523,15 @@ ol {
 
     :root {
         --section-padding: 60px;
+    }
+
+    /* Hero Portrait nur auf Desktop */
+    .hero-content {
+        display: block;
+    }
+
+    .hero-portrait {
+        display: none;
     }
 
     /* Navigation */
@@ -2316,5 +2404,146 @@ ol {
     .faq-answer {
         padding: 0 18px 18px;
         font-size: 0.94rem;
+    }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LIGHTBOX
+═══════════════════════════════════════════════════════════════════════════ */
+.lightbox-trigger {
+    cursor: zoom-in;
+}
+
+.lightbox-trigger:focus-visible {
+    outline: 3px solid var(--color-red);
+    outline-offset: 3px;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 12, 0.92);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.22s ease, visibility 0.22s;
+}
+
+.lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-stage {
+    position: relative;
+    max-width: min(92vw, 1400px);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    transform: scale(0.97);
+    transition: transform 0.22s ease;
+}
+
+.lightbox.is-open .lightbox-stage {
+    transform: scale(1);
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.lightbox-caption {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.92rem;
+    font-weight: 500;
+    text-align: center;
+    max-width: 80%;
+    margin: 0;
+}
+
+.lightbox-caption:empty {
+    display: none;
+}
+
+.lightbox-close,
+.lightbox-nav {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    padding: 0;
+    z-index: 2;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: scale(1.05);
+}
+
+.lightbox-close {
+    top: 20px;
+    right: 20px;
+}
+
+.lightbox-nav--prev { left: 24px; top: 50%; transform: translateY(-50%); }
+.lightbox-nav--next { right: 24px; top: 50%; transform: translateY(-50%); }
+
+.lightbox-nav--prev:hover { transform: translateY(-50%) scale(1.05); }
+.lightbox-nav--next:hover { transform: translateY(-50%) scale(1.05); }
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .lightbox {
+        padding: 12px;
+    }
+    .lightbox-close {
+        top: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+    }
+    .lightbox-nav {
+        width: 42px;
+        height: 42px;
+    }
+    .lightbox-nav--prev { left: 10px; }
+    .lightbox-nav--next { right: 10px; }
+    .lightbox-image {
+        max-height: 72vh;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lightbox,
+    .lightbox-stage {
+        transition: none;
     }
 }
