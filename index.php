@@ -644,6 +644,12 @@ function h(string $key): string
      EINSATZGEBIET / LOKALE SEO
 ═══════════════════════════════════════════════════════════════════════════ -->
 <section class="service-area section-light" id="einsatzgebiet">
+    <div class="service-area-bg" aria-hidden="true">
+        <picture>
+            <source srcset="img/team/viktor.webp" type="image/webp">
+            <img src="img/team/viktor.png" alt="" loading="lazy" decoding="async">
+        </picture>
+    </div>
     <div class="container">
 
         <div class="section-intro text-center">
