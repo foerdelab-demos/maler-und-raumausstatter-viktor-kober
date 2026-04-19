@@ -85,8 +85,10 @@
 
 <footer class="site-footer legal-footer">
     <div class="container legal-brand-row">
-        <img src="img/initials-logo.svg" alt="Initiallogo Viktor Kober" class="footer-logo-initials-img" aria-hidden="true">
-        <img src="img/Viktor%20Kober.png" alt="Viktor Kober" class="footer-logo-img">
+        <div class="footer-brand-logos">
+            <img src="img/initials-logo.svg" alt="Initiallogo Viktor Kober" class="footer-logo-initials-img" aria-hidden="true">
+            <img src="img/Viktor%20Kober.png" alt="Viktor Kober" class="footer-logo-img">
+        </div>
     </div>
     <div class="container footer-bottom">
         <p>&copy; <?php echo date('Y'); ?> [BETREIBERNAME]. Alle Rechte vorbehalten.</p>

@@ -584,4 +584,60 @@
         });
     }
 
+    /* ── Hero Logo-Animation: zufällige Pfad-Varianten ─────────────────────────
+       Bei jedem Loop-Ende wird ein neuer zufälliger Bezier-Pfad generiert —
+       Swap passiert exakt am Iteration-Boundary (animationiteration / repeatEvent),
+       sodass keine sichtbaren Sprünge entstehen. Trail und Logo wählen unabhängig. */
+    (function () {
+        const trailPath  = document.querySelector('.logo-trail-path');
+        const ridePath   = document.getElementById('logoRidePath');
+        const animMotion = document.querySelector('.hero-logo-rider-svg animateMotion');
+        if (!trailPath || !ridePath || !animMotion) return;
+
+        // Generiert einen geschwungenen vertikalen Pfad mit 3 alternierenden Peaks
+        // (rechts → links → rechts). Desktop nutzt breitere x-Ranges (größerer Spielraum),
+        // Mobile bleibt kompakter, damit das Logo auf schmalen Screens nicht raushängt.
+        const desktopQuery = window.matchMedia('(min-width: 901px)');
+        function generatePath() {
+            const r = (min, max) => min + Math.random() * (max - min);
+            const isDesktop = desktopQuery.matches;
+            // x-Werte (viewBox 0–400): Desktop spannt deutlich weiter, Mobile bleibt kompakt
+            const sx   = isDesktop ? r(110, 180) : r(80, 140);
+            const ex   = isDesktop ? r(110, 180) : r(80, 140);
+            const rp1x = isDesktop ? r(270, 340) : r(180, 235);
+            const lpx  = isDesktop ? r(30, 100)  : r(25, 80);
+            const rp2x = isDesktop ? r(270, 340) : r(180, 235);
+            const c1x  = isDesktop ? r(210, 260) : r(160, 220);
+            const c2x  = isDesktop ? r(300, 355) : r(215, 255);
+            const s2x  = isDesktop ? r(10, 70)   : r(5, 55);
+            const s3x  = isDesktop ? r(300, 355) : r(215, 255);
+            const s4x  = isDesktop ? r(30, 100)  : r(25, 80);
+            // y-Werte sind bildschirmunabhängig (viewBox 0–1000)
+            const rp1y = r(210, 290), lpy = r(460, 540), rp2y = r(710, 790);
+            const c1y = r(40, 90),   c2y = r(135, 185);
+            const s2y = r(370, 420), s3y = r(575, 625), s4y = r(910, 975);
+            return `M ${sx} -50 C ${c1x} ${c1y}, ${c2x} ${c2y}, ${rp1x} ${rp1y} `
+                 + `S ${s2x} ${s2y}, ${lpx} ${lpy} `
+                 + `S ${s3x} ${s3y}, ${rp2x} ${rp2y} `
+                 + `S ${s4x} ${s4y}, ${ex} 1080`;
+        }
+
+        // Initiale Variation beim Laden
+        trailPath.setAttribute('d', generatePath());
+        ridePath.setAttribute('d', generatePath());
+
+        // Neue Varianten an jedem Iteration-Boundary (keine Mid-Cycle-Sprünge)
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduceMotion) return;
+
+        trailPath.addEventListener('animationiteration', function () {
+            trailPath.setAttribute('d', generatePath());
+        });
+
+        // SMIL-Repeat-Event feuert am Start jeder animateMotion-Wiederholung
+        animMotion.addEventListener('repeatEvent', function () {
+            ridePath.setAttribute('d', generatePath());
+        });
+    })();
+
 })();

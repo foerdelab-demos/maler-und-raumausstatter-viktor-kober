@@ -387,7 +387,7 @@ ol {
     background-size: cover;
     background-position: center;
     opacity: 1;
-    filter: brightness(0.45) saturate(0.85) contrast(1.1);
+    filter: brightness(0.75) saturate(0.85) contrast(1.1);
     transform: scale(1.02);
     animation: heroKenBurns 24s ease-in-out infinite alternate;
     will-change: transform;
@@ -398,45 +398,53 @@ ol {
     100% { transform: scale(1.12) translate3d(-2%, -1%, 0); }
 }
 
-/* SVG-Pinselstriche: werden via stroke-dashoffset "gemalt" */
-.hero-paint {
+/* Logo-Trail: geschwungene vertikale Bahn in der linken Hero-Hälfte, die sich in Markenrot "malt".
+   aspect-ratio passt zur viewBox, damit preserveAspectRatio="meet" die Bahn uniform skaliert (keine Verzerrung). */
+.hero-logo-trail {
     position: absolute;
-    inset: 0;
-    width: 100%;
+    top: 0;
+    left: 0;
     height: 100%;
+    aspect-ratio: 400 / 1000;
     pointer-events: none;
 }
 
-.paint-stroke {
+.logo-trail-path {
     fill: none;
     stroke: var(--color-red);
-    stroke-width: 90;
+    stroke-width: 22;
     stroke-linecap: round;
     stroke-linejoin: round;
     opacity: 0;
-    stroke-dasharray: 3200;
-    stroke-dashoffset: 3200;
+    /* pathLength="1" normalisiert das Dashing auf Pfad-Fraktionen — bildschirmunabhängig */
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
     mix-blend-mode: screen;
-    filter: blur(0.5px);
+    vector-effect: non-scaling-stroke;
+    /* Eigene Dauer, unabhängig vom Logo (11 s): Trail "fällt" in seinem eigenen Rhythmus */
+    animation: logoTrailPaint 5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
-.paint-stroke--1 {
-    animation: paintBrush 9s cubic-bezier(0.55, 0.1, 0.35, 1) infinite;
-    animation-delay: 0.4s;
+/* Initials-Logo folgt via SVG animateMotion exakt dem Bezier-Pfad — browser-native, GPU-beschleunigt, frei von Polyline-Kinks.
+   aspect-ratio + preserveAspectRatio="meet" (uniform) verhindert Verzerrung, egal welche Screen-Größe. */
+.hero-logo-rider-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    aspect-ratio: 400 / 1000;
+    pointer-events: none;
+    z-index: 1;
+    overflow: visible;
+    filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.15));
 }
 
-.paint-stroke--2 {
-    stroke: #d94546;
-    stroke-width: 110;
-    animation: paintBrush 11s cubic-bezier(0.55, 0.1, 0.35, 1) infinite;
-    animation-delay: 3.2s;
-}
-
-.paint-stroke--3 {
-    stroke: #a81d1e;
-    stroke-width: 80;
-    animation: paintBrush 10s cubic-bezier(0.55, 0.1, 0.35, 1) infinite;
-    animation-delay: 6.1s;
+/* Desktop: SVGs vom linken Rand abrücken, damit die breitere Logo-Bahn nicht über den Hero-Rand rausragt */
+@media (min-width: 901px) {
+    .hero-logo-trail,
+    .hero-logo-rider-svg {
+        left: 5%;
+    }
 }
 
 /* Lichter "Roller", der diagonal durch das Bild zieht */
@@ -455,7 +463,7 @@ ol {
     mix-blend-mode: screen;
     pointer-events: none;
     will-change: transform;
-    animation: paintRoller 7s linear infinite;
+    animation: paintRoller 4s linear infinite;
 }
 
 .hero-image-overlay {
@@ -466,24 +474,24 @@ ol {
         linear-gradient(
             to bottom,
             rgba(0, 0, 0, 0) 70%,
-            rgba(0, 0, 0, 0.45) 88%,
-            rgba(0, 0, 0, 0.75) 100%
+            rgba(0, 0, 0, 0.25) 88%,
+            rgba(0, 0, 0, 0.55) 100%
         ),
         linear-gradient(
             105deg,
-            rgba(0, 0, 0, 0.72) 0%,
-            rgba(0, 0, 0, 0.55) 55%,
-            rgba(0, 0, 0, 0.3) 100%
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.15) 55%,
+            rgba(0, 0, 0, 0.0) 100%
         );
     pointer-events: none;
 }
 
-@keyframes paintBrush {
-    0%   { stroke-dashoffset: 3200; opacity: 0; }
-    8%   { opacity: 0.55; }
-    55%  { stroke-dashoffset: 0;    opacity: 0.55; }
-    78%  { stroke-dashoffset: 0;    opacity: 0.55; }
-    100% { stroke-dashoffset: -3200; opacity: 0; }
+/* Trail: smooth von oben nach unten gezeichnet (dashoffset 1→0 linear interpoliert, pathLength="1" normalisiert), mit sanftem Opacity-Fade an beiden Rändern für saubere Loops. */
+@keyframes logoTrailPaint {
+    0%   { stroke-dashoffset: 1; opacity: 0; }
+    10%  { opacity: 0.5; }
+    90%  { opacity: 0.5; }
+    100% { stroke-dashoffset: 0; opacity: 0; }
 }
 
 @keyframes paintRoller {
@@ -515,8 +523,8 @@ ol {
     right: -120px;
     bottom: -40px;
     background: radial-gradient(ellipse at 30% 50%,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.45) 45%,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.1) 45%,
         rgba(0, 0, 0, 0) 75%);
     filter: blur(20px);
     pointer-events: none;
@@ -528,12 +536,12 @@ ol {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 60vw;
+    width: 70vw;
     max-width: 1100px;
     min-width: 640px;
     z-index: 1;
     pointer-events: none;
-    opacity: 0.85;
+    opacity: 1;
 }
 
 /* Bodenschatten: dunkle Ellipse direkt unter dem Fahrzeug – wirkt wie Asphalt */
@@ -545,10 +553,6 @@ ol {
     width: 78%;
     height: 44px;
     transform: translateX(-50%);
-    background: radial-gradient(ellipse at center,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.45) 40%,
-        rgba(0, 0, 0, 0) 72%);
     filter: blur(14px);
     pointer-events: none;
     z-index: 0;
@@ -1470,24 +1474,28 @@ ol {
 }
 
 .footer-brand-logos {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    padding: 10px 16px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .footer-logo-initials-img {
     width: 30px;
     height: 30px;
     display: block;
-    filter: brightness(0) saturate(100%) invert(28%) sepia(81%) saturate(1968%) hue-rotate(339deg) brightness(96%) contrast(94%);
+    filter: brightness(0) saturate(100%) invert(28%) sepia(81%) saturate(1268%) hue-rotate(339deg) brightness(96%) contrast(94%);
     opacity: 1;
 }
 
 .footer-logo-img {
-    height: 44px;
+    height: 50px;
     width: auto;
     display: block;
-    filter: brightness(0) saturate(100%) invert(28%) sepia(81%) saturate(1968%) hue-rotate(339deg) brightness(96%) contrast(94%);
+    /* Originalfarben — Logo sitzt auf der weißen Card (.footer-brand-logos), daher kein Filter nötig */
     opacity: 1;
 }
 
@@ -1604,6 +1612,14 @@ ol {
         pointer-events: none;
         opacity: 0.95;
         animation: heroPortraitIn 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    /* Logo-Image kleiner auf Tablets (px in CSS = SVG-User-Units) */
+    .hero-logo-rider-img {
+        x: -55px;
+        y: -55px;
+        width: 110px;
+        height: 110px;
     }
 
     .hero-portrait-mobile img,
@@ -1778,6 +1794,13 @@ ol {
         max-width: 220px;
         min-width: 150px;
         opacity: 0.6;
+    }
+
+    .hero-logo-rider-img {
+        x: -40px;
+        y: -40px;
+        width: 80px;
+        height: 80px;
     }
 
     .hero-text,
@@ -2324,14 +2347,18 @@ ol {
 
 @media (prefers-reduced-motion: reduce) {
     .hero-image::before,
-    .paint-stroke,
+    .logo-trail-path,
     .hero-image-photo {
         animation: none;
         transform: none;
     }
-    .paint-stroke {
+    .logo-trail-path {
         opacity: 0.4;
         stroke-dashoffset: 0;
+    }
+    /* SVG animateMotion lässt sich nicht per CSS anhalten; Logo bei reduzierter Bewegung ausblenden */
+    .hero-logo-rider-svg {
+        display: none;
     }
 
     .marquee-row {

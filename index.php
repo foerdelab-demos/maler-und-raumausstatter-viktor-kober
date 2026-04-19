@@ -121,23 +121,29 @@ function h(string $key): string
 ═══════════════════════════════════════════════════════════════════════════ -->
 <section class="hero" id="hero">
 
-    <!-- Animierter Hintergrund: Pinselstriche bemalen die Wand -->
+    <!-- Animierter Hintergrund: Initials-Logo wandert geschwungen vertikal in der linken Hero-Hälfte -->
     <div class="hero-image" aria-hidden="true">
         <div class="hero-image-photo"></div>
-        <svg class="hero-paint" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <svg class="hero-logo-trail" viewBox="0 0 400 1000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <defs>
                 <filter id="paintRough" x="-10%" y="-10%" width="120%" height="120%">
                     <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
-                    <feDisplacementMap in="SourceGraphic" scale="6"/>
+                    <feDisplacementMap in="SourceGraphic" scale="4"/>
                 </filter>
             </defs>
-            <g filter="url(#paintRough)">
-                <path class="paint-stroke paint-stroke--1" d="M -80 260 C 260 190, 640 320, 980 230 S 1520 300, 1720 240" />
-                <path class="paint-stroke paint-stroke--2" d="M -80 560 C 320 620, 720 480, 1100 580 S 1500 520, 1720 600" />
-                <path class="paint-stroke paint-stroke--3" d="M -80 780 C 260 720, 680 840, 1040 760 S 1480 820, 1720 740" />
-            </g>
+            <path class="logo-trail-path" pathLength="1" d="M 100 -50 C 200 60, 230 160, 200 250 S 30 400, 60 500 S 230 600, 200 750 S 50 950, 100 1080" filter="url(#paintRough)"/>
         </svg>
         <div class="hero-image-overlay"></div>
+        <svg class="hero-logo-rider-svg" viewBox="0 0 400 1000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+                <path id="logoRidePath" d="M 100 -50 C 200 60, 230 160, 200 250 S 30 400, 60 500 S 230 600, 200 750 S 50 950, 100 1080"/>
+            </defs>
+            <image class="hero-logo-rider-img" href="img/initials-logo.svg" x="-70" y="-70" width="140" height="140" preserveAspectRatio="xMidYMid meet">
+                <animateMotion dur="5s" repeatCount="indefinite">
+                    <mpath href="#logoRidePath"/>
+                </animateMotion>
+            </image>
+        </svg>
     </div>
 
     <div class="container hero-content">

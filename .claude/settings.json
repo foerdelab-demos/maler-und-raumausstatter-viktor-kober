@@ -31,7 +31,13 @@
       "Bash(sips -g pixelWidth -g pixelHeight img/Viktor.png)",
       "Bash(sips --resampleWidth 1200 img/Viktor.png --out img/team/viktor.png)",
       "Bash(cwebp -q 85 -alpha_q 90 img/team/viktor.png -o img/team/viktor.webp)",
-      "Bash(find . -type f -name \"*.php\" -not -path \"./.git/*\" -exec wc -c {} \\\\;)"
+      "Bash(find . -type f -name \"*.php\" -not -path \"./.git/*\" -exec wc -c {} \\\\;)",
+      "Bash(lsof -ti:8000)",
+      "Bash(php -S localhost:8000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8000/)",
+      "Bash(node /tmp/sample-path.js)",
+      "Bash(identify \"/Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/img/Viktor Kober.png\")"
     ]
   }
 }
