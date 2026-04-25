@@ -4,6 +4,9 @@
  * Landingpage – index.php
  */
 
+// ── Konfiguration (Cloudflare Turnstile Keys) ─────────────────────────────────
+require_once __DIR__ . '/includes/config.php';
+
 // ── Formularverarbeitung ──────────────────────────────────────────────────────
 $formSuccess = false;
 $formErrors  = [];
@@ -11,9 +14,7 @@ $formErrors  = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kontakt_form'])) {
 
     // ── Cloudflare Turnstile Verifikation ─────────────────────────────────────
-    // Secret Key aus Umgebungsvariable lesen (in .env oder Server-Config setzen).
-    // Fallback ist der Platzhalter – vor Live-Gang ersetzen!
-    $turnstileSecret   = getenv('TURNSTILE_SECRET_KEY') ?: 'YOUR_TURNSTILE_SECRET_KEY';
+    $turnstileSecret   = TURNSTILE_SECRET_KEY;
     $turnstileResponse = $_POST['cf-turnstile-response'] ?? '';
 
     $cfCheck = false;
@@ -96,13 +97,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kontakt_form'])) {
         }
     }
 }
-
-/**
- * Konfiguration – vor Live-Gang anpassen
- * TURNSTILE_SITE_KEY: Cloudflare Dashboard → Turnstile → Site Key
- * TURNSTILE_SECRET_KEY kann alternativ als Umgebungsvariable gesetzt werden.
- */
-define('TURNSTILE_SITE_KEY', getenv('TURNSTILE_SITE_KEY') ?: 'YOUR_SITE_KEY');
 
 // Hilfsfunktion: Formularwert sicher ausgeben
 function h(string $key): string
