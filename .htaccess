@@ -52,8 +52,8 @@ AddType video/ogg .ogv
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # www. → non-www (Canonical)
-    RewriteCond %{HTTP_HOST} ^www\.viktorkober\.de$ [NC]
-    RewriteRule ^ https://viktorkober.de%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTP_HOST} ^www\.maler-buedelsdorf\.de$ [NC]
+    RewriteRule ^ https://maler-buedelsdorf.de%{REQUEST_URI} [L,R=301]
 
     # Trailing slash konsistent entfernen (außer bei Verzeichnissen)
     RewriteCond %{REQUEST_FILENAME} !-d

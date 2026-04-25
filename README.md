@@ -3,7 +3,7 @@
 Professionelle Landingpage für **Viktor Kober**, Raumausstatter aus Büdelsdorf (Schleswig-Holstein).
 Raumgestaltung, Tapezierarbeiten, Renovierungen, Fassadenarbeiten, Plissee & Insektenschutz.
 
-🌐 **Live:** [viktorkober.de](https://viktorkober.de)
+🌐 **Live:** [maler-buedelsdorf.de](https://maler-buedelsdorf.de)
 
 ---
 
@@ -78,8 +78,8 @@ Cloudflare Turnstile schützt das Kontaktformular kostenlos vor Spam-Bots – oh
 1. Im Cloudflare-Dashboard links im Menü auf **„Turnstile"** klicken.
 2. Auf **„Add Site"** (bzw. „Widget hinzufügen") klicken.
 3. Folgende Angaben eintragen:
-   - **Widget-Name:** z. B. `viktorkober.de Kontaktformular`
-   - **Hostnames:** `viktorkober.de` (und ggf. `www.viktorkober.de`)
+   - **Widget-Name:** z. B. `maler-buedelsdorf.de Kontaktformular`
+   - **Hostnames:** `maler-buedelsdorf.de` (und ggf. `www.maler-buedelsdorf.de`)
    - **Widget-Modus:** `Managed` (empfohlen)
 4. Auf **„Create"** klicken.
 

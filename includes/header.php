@@ -18,18 +18,18 @@
     <meta name="rating" content="general">
     <meta name="distribution" content="local">
     <meta name="coverage" content="Büdelsdorf, Rendsburg, Eckernförde, Schleswig-Holstein">
-    <link rel="canonical" href="https://viktorkober.de/">
-    <link rel="alternate" hreflang="de-DE" href="https://viktorkober.de/">
-    <link rel="alternate" hreflang="de" href="https://viktorkober.de/">
+    <link rel="canonical" href="https://maler-buedelsdorf.de/">
+    <link rel="alternate" hreflang="de-DE" href="https://maler-buedelsdorf.de/">
+    <link rel="alternate" hreflang="de" href="https://maler-buedelsdorf.de/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="business.business">
     <meta property="og:locale" content="de_DE">
     <meta property="og:title" content="Maler & Raumausstatter Büdelsdorf – Viktor Kober">
     <meta property="og:description" content="Renovierung, Raumgestaltung, Tapezierarbeiten, Fassade, Plissee & Insektenschutz in Büdelsdorf, Rendsburg, Eckernförde und Umgebung. Sauber, termintreu, persönlich.">
-    <meta property="og:url" content="https://viktorkober.de/">
+    <meta property="og:url" content="https://maler-buedelsdorf.de/">
     <meta property="og:site_name" content="Viktor Kober – Maler & Raumausstatter Büdelsdorf">
-    <meta property="og:image" content="https://viktorkober.de/img/Vorschau.png">
+    <meta property="og:image" content="https://maler-buedelsdorf.de/img/Vorschau.png">
     <meta property="og:image:alt" content="Viktor Kober – Maler & Raumausstatter aus Büdelsdorf">
     <meta property="og:image:width" content="3024">
     <meta property="og:image:height" content="1528">
@@ -45,7 +45,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Maler & Raumausstatter Büdelsdorf – Viktor Kober">
     <meta name="twitter:description" content="Renovierung, Raumgestaltung, Tapezieren, Fassade & Plissee in Büdelsdorf, Rendsburg und Eckernförde. Sauber, termintreu, persönlich.">
-    <meta name="twitter:image" content="https://viktorkober.de/img/Vorschau.png">
+    <meta name="twitter:image" content="https://maler-buedelsdorf.de/img/Vorschau.png">
     <meta name="twitter:image:alt" content="Viktor Kober – Maler & Raumausstatter aus Büdelsdorf">
 
     <!-- Geo / Lokale SEO -->
@@ -63,22 +63,22 @@
     {
         "@context": "https://schema.org",
         "@type": ["HousePainter", "LocalBusiness"],
-        "@id": "https://viktorkober.de/#business",
+        "@id": "https://maler-buedelsdorf.de/#business",
         "name": "Viktor Kober – Maler & Raumausstatter Büdelsdorf",
         "alternateName": "Viktor Kober Raumausstatter",
         "description": "Maler, Raumausstatter und Renovierungsbetrieb in Büdelsdorf. Raumgestaltung innen & außen, Tapezierarbeiten, Renovierungen, Fassadenarbeiten, Plissee, Sonnenschutz und Insektenschutz für Büdelsdorf, Rendsburg, Eckernförde und ganz Schleswig-Holstein.",
         "slogan": "Raumgestaltung, die Ihr Zuhause sichtbar aufwertet.",
-        "url": "https://viktorkober.de/",
+        "url": "https://maler-buedelsdorf.de/",
         "telephone": "+491743226804",
         "email": "info@maler-buedelsdorf.de",
         "currenciesAccepted": "EUR",
         "paymentAccepted": "Bar, Überweisung, Rechnung",
         "priceRange": "€€",
         "image": [
-            "https://viktorkober.de/img/Viktor%20Kober.png",
-            "https://viktorkober.de/img/Vorschau.png"
+            "https://maler-buedelsdorf.de/img/Viktor%20Kober.png",
+            "https://maler-buedelsdorf.de/img/Vorschau.png"
         ],
-        "logo": "https://viktorkober.de/img/Viktor%20Kober.png",
+        "logo": "https://maler-buedelsdorf.de/img/Viktor%20Kober.png",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Am Stadtpark 7",
@@ -242,7 +242,7 @@
         ],
         "potentialAction": {
             "@type": "ReserveAction",
-            "target": "https://viktorkober.de/#kontakt",
+            "target": "https://maler-buedelsdorf.de/#kontakt",
             "name": "Kostenloses Angebot anfragen"
         }
     }
@@ -253,12 +253,12 @@
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "@id": "https://viktorkober.de/#website",
-        "url": "https://viktorkober.de/",
+        "@id": "https://maler-buedelsdorf.de/#website",
+        "url": "https://maler-buedelsdorf.de/",
         "name": "Viktor Kober – Maler & Raumausstatter Büdelsdorf",
         "description": "Offizielle Website von Viktor Kober – Maler und Raumausstatter in Büdelsdorf.",
         "inLanguage": "de-DE",
-        "publisher": { "@id": "https://viktorkober.de/#business" }
+        "publisher": { "@id": "https://maler-buedelsdorf.de/#business" }
     }
     </script>
 
@@ -272,31 +272,31 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Startseite",
-                "item": "https://viktorkober.de/"
+                "item": "https://maler-buedelsdorf.de/"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Leistungen",
-                "item": "https://viktorkober.de/#leistungen"
+                "item": "https://maler-buedelsdorf.de/#leistungen"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Referenzen",
-                "item": "https://viktorkober.de/#referenzen"
+                "item": "https://maler-buedelsdorf.de/#referenzen"
             },
             {
                 "@type": "ListItem",
                 "position": 4,
                 "name": "Einsatzgebiet",
-                "item": "https://viktorkober.de/#einsatzgebiet"
+                "item": "https://maler-buedelsdorf.de/#einsatzgebiet"
             },
             {
                 "@type": "ListItem",
                 "position": 5,
                 "name": "Kontakt",
-                "item": "https://viktorkober.de/#kontakt"
+                "item": "https://maler-buedelsdorf.de/#kontakt"
             }
         ]
     }

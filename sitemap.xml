@@ -3,70 +3,70 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     <url>
-        <loc>https://viktorkober.de/</loc>
+        <loc>https://maler-buedelsdorf.de/</loc>
         <lastmod>2026-04-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://viktorkober.de/img/Viktor%20Kober.png</image:loc>
+            <image:loc>https://maler-buedelsdorf.de/img/Viktor%20Kober.png</image:loc>
             <image:title>Viktor Kober – Maler &amp; Raumausstatter Büdelsdorf</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://viktorkober.de/img/Vorschau.png</image:loc>
+            <image:loc>https://maler-buedelsdorf.de/img/Vorschau.png</image:loc>
             <image:title>Raumgestaltung in Büdelsdorf</image:title>
         </image:image>
     </url>
 
     <url>
-        <loc>https://viktorkober.de/#leistungen</loc>
+        <loc>https://maler-buedelsdorf.de/#leistungen</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://viktorkober.de/#referenzen</loc>
+        <loc>https://maler-buedelsdorf.de/#referenzen</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://viktorkober.de/#kundenstimmen</loc>
+        <loc>https://maler-buedelsdorf.de/#kundenstimmen</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://viktorkober.de/#einsatzgebiet</loc>
+        <loc>https://maler-buedelsdorf.de/#einsatzgebiet</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://viktorkober.de/#faq</loc>
+        <loc>https://maler-buedelsdorf.de/#faq</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://viktorkober.de/#ablauf</loc>
+        <loc>https://maler-buedelsdorf.de/#ablauf</loc>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://viktorkober.de/#kontakt</loc>
+        <loc>https://maler-buedelsdorf.de/#kontakt</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://viktorkober.de/impressum.php</loc>
+        <loc>https://maler-buedelsdorf.de/impressum.php</loc>
         <changefreq>yearly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://viktorkober.de/datenschutz.php</loc>
+        <loc>https://maler-buedelsdorf.de/datenschutz.php</loc>
         <changefreq>yearly</changefreq>
         <priority>0.2</priority>
     </url>

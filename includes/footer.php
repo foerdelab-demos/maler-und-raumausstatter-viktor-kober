@@ -3,7 +3,7 @@
 ═══════════════════════════════════════════════════════════════════════════ -->
 <footer class="site-footer" id="datenschutz" itemscope itemtype="https://schema.org/HousePainter">
     <meta itemprop="name" content="Viktor Kober – Maler & Raumausstatter Büdelsdorf">
-    <meta itemprop="url" content="https://viktorkober.de/">
+    <meta itemprop="url" content="https://maler-buedelsdorf.de/">
     <meta itemprop="priceRange" content="€€">
 
     <div class="container footer-inner">
