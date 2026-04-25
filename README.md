@@ -131,7 +131,7 @@ Anfragen aus dem Formular werden per E-Mail an folgende Adresse gesendet:
 info@maler-buedelsdorf.de
 ```
 
-Die Absender-Adresse ist `noreply@viktorkober-maler.de` (Reply-To wird automatisch auf die Adresse des Absenders gesetzt).
+Die Absender-Adresse ist `noreply@maler-buedelsdorf.de` (Reply-To wird automatisch auf die Adresse des Absenders gesetzt).
 
 Soll die Empfänger-Adresse geändert werden: in [index.php](index.php) in der Zeile `$to = 'info@maler-buedelsdorf.de';` anpassen.
 
