@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['kontakt_form'])) {
         $body   .= "-------------------------------------\n";
         $body   .= 'Gesendet am: ' . date('d.m.Y \u\m H:i \U\h\r') . "\n";
 
-        $headers  = "From: noreply@viktorkober-maler.de\r\n";
+        $headers  = "From: noreply@maler-buedelsdorf.de\r\n";
         $headers .= "Reply-To: {$email}\r\n";
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
         $headers .= "X-Mailer: PHP/" . PHP_VERSION;
