@@ -6,7 +6,7 @@
     <title>Impressum | Viktor Kober – Maler & Raumausstatter</title>
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="Impressum der Website von Viktor Kober - Maler und Raumausstatter in Buedelsdorf.">
-    <link rel="canonical" href="https://maler-buedelsdorf.de/impressum.php">
+    <link rel="canonical" href="https://viktorkober.de/impressum.php">
     <link rel="icon" type="image/png" href="img/Viktor%20Kober.png">
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -31,40 +31,29 @@
     <div class="container legal-content">
         <h1>Impressum</h1>
 
-        <p class="legal-note"><strong>Muster fuer den Weiterverkauf:</strong> Diese Angaben muessen vor dem Live-Gang auf den tatsaechlichen Betreiber angepasst und rechtlich geprueft werden.</p>
-
         <h2>Angaben gemaess Paragraph 5 TMG</h2>
         <p>
-            [VOLLSTAENDIGER NAME / FIRMENNAME]<br>
-            [RECHTSFORM, z. B. Einzelunternehmen / GmbH]<br>
-            [STRASSE, HAUSNUMMER]<br>
-            [PLZ, ORT]<br>
-            [LAND]
+            Viktor Kober<br>
+            Am Stadtpark 13<br>
+            24782 Büdelsdorf<br>
+            Deutschland
         </p>
 
         <h2>Kontakt</h2>
         <p>
-            Telefon: [TELEFONNUMMER]<br>
-            E-Mail: [E-MAIL-ADRESSE]
+            Telefon: +49 174 3226804<br>
+            E-Mail:  info@maler-buedelsdorf.de
         </p>
 
         <h2>Vertreten durch</h2>
-        <p>[NAME DER VERTRETUNGSBERECHTIGTEN PERSON]</p>
-
-        <h2>Umsatzsteuer-ID</h2>
-        <p>Umsatzsteuer-Identifikationsnummer gemaess Paragraph 27 a Umsatzsteuergesetz: [UST-ID, falls vorhanden]</p>
-
-        <h2>Berufsrechtliche Angaben (falls erforderlich)</h2>
-        <p>
-            Berufsbezeichnung: [z. B. Maler und Lackierer]<br>
-            Kammer: [Name der zustaendigen Kammer]<br>
-            Verliehen in: [Staat]
-        </p>
+        <p>Viktor Kober</p>
 
         <h2>Verantwortlich fuer den Inhalt gemaess Paragraph 18 Abs. 2 MStV</h2>
         <p>
-            [NAME]<br>
-            [ANSCHRIFT]
+            Viktor Kober<br>
+            Am Stadtpark 13<br>
+            24782 Büdelsdorf<br>
+            Deutschland
         </p>
 
         <h2>EU-Streitschlichtung</h2>
@@ -91,7 +80,7 @@
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>&copy; <?php echo date('Y'); ?> [BETREIBERNAME]. Alle Rechte vorbehalten.</p>
+        <p>&copy; <?php echo date('Y'); ?> Viktor Kober. Alle Rechte vorbehalten.</p>
         <p><a href="index.php">Startseite</a> · <a href="datenschutz.php">Datenschutz</a> · <a href="impressum.php">Impressum</a></p>
     </div>
 </footer>

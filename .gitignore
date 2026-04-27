@@ -1,3 +1,4 @@
 .deploy.env
 deploy.sh
 data/newsletter_subscribers.csv
+.claude

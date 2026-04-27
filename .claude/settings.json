@@ -37,7 +37,18 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8000/)",
       "Bash(node /tmp/sample-path.js)",
-      "Bash(identify \"/Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/img/Viktor Kober.png\")"
+      "Bash(identify \"/Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/img/Viktor Kober.png\")",
+      "Bash(php -l /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/index.php /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/includes/config.php)",
+      "Bash(git -C /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober status)",
+      "Bash(git -C /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober diff)",
+      "Bash(git -C /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober log --oneline -5)",
+      "Bash(git -C /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober add includes/config.php index.php)",
+      "Bash(git -C /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober commit -m ' *)",
+      "Bash(git -C /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober diff -- sitemap.xml robots.txt)",
+      "Bash(php -l /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/includes/header.php /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/includes/footer.php /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/impressum.php /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober/datenschutz.php)",
+      "Bash(git -C /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober diff -- index.php .htaccess)",
+      "Bash(git -C /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober add .htaccess index.php)",
+      "Bash(git -C /Users/jasonholweg/Desktop/Flora-Website/Viktor-Kober add README.md)"
     ]
   }
 }

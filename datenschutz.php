@@ -6,7 +6,7 @@
     <title>Datenschutzerklaerung | Viktor Kober – Maler & Raumausstatter</title>
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="Datenschutzerklaerung der Website von Viktor Kober - Maler und Raumausstatter in Buedelsdorf.">
-    <link rel="canonical" href="https://maler-buedelsdorf.de/datenschutz.php">
+    <link rel="canonical" href="https://viktorkober.de/datenschutz.php">
     <link rel="icon" type="image/png" href="img/Viktor%20Kober.png">
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -31,16 +31,14 @@
     <div class="container legal-content">
         <h1>Datenschutzerklaerung</h1>
 
-        <p class="legal-note"><strong>Muster fuer den Weiterverkauf:</strong> Diese Datenschutzerklaerung ist eine Grundlage und muss vor dem Live-Gang auf den tatsaechlichen Betreiber, die tatsaechlich genutzten Dienste und die konkreten Prozesse angepasst sowie rechtlich geprueft werden.</p>
-
         <h2>1. Verantwortlicher</h2>
         <p>
-            [VOLLSTAENDIGER NAME / FIRMENNAME]<br>
-            [STRASSE, HAUSNUMMER]<br>
-            [PLZ, ORT]<br>
-            [LAND]<br>
-            E-Mail: [E-MAIL-ADRESSE]<br>
-            Telefon: [TELEFONNUMMER]
+            Viktor Kober<br>
+            Am Stadtpark 13<br>
+            24782 Büdelsdorf<br>
+            Deutschland<br>
+            E-Mail: info@maler-buedelsdorf.de<br>
+            Telefon: +49 174 3226804
         </p>
 
         <h2>2. Allgemeine Hinweise zur Datenverarbeitung</h2>
@@ -120,7 +118,7 @@
         </div>
     </div>
     <div class="container footer-bottom">
-        <p>&copy; <?php echo date('Y'); ?> [BETREIBERNAME]. Alle Rechte vorbehalten.</p>
+        <p>&copy; <?php echo date('Y'); ?> Viktor Kober. Alle Rechte vorbehalten.</p>
         <p><a href="index.php">Startseite</a> · <a href="datenschutz.php">Datenschutz</a> · <a href="impressum.php">Impressum</a></p>
     </div>
 </footer>
