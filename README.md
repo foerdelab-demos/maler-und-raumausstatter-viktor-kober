@@ -121,10 +121,12 @@ define('TURNSTILE_SECRET_KEY', 'YOUR_TURNSTILE_SECRET_KEY');
 
 ### Falls der Hoster keine Umgebungsvariablen unterstützt
 
-Alternativ können die Schlüssel direkt in `index.php` eingetragen werden:
+Alternativ kann die `includes/config.php` wie folgt befüllt werden (aber nur als Workaround):
 
-- Zeile **16:** `'YOUR_TURNSTILE_SECRET_KEY'` → durch den **Secret Key** ersetzen
-- Zeile **105:** `'YOUR_SITE_KEY'` → durch den **Site Key** ersetzen
+```
+define('TURNSTILE_SITE_KEY',   'YOUR_SITE_KEY'); → durch den **Site Key** ersetzen
+define('TURNSTILE_SECRET_KEY', 'YOUR_TURNSTILE_SECRET_KEY'); → durch den **Secret Key** ersetzen
+```
 
 > Diese Variante funktioniert, ist aber weniger sicher – die Datei sollte dann nicht öffentlich eingesehen werden können.
 
