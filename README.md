@@ -42,6 +42,7 @@ Viktor-Kober/
 ├── includes/
 │   ├── header.php         # Head, Meta-Tags & Navigation
 │   └── footer.php         # Footer & Scripts
+│	└── config.php         # Konfiguration – Cloudflare Turnstile (steht auf gitignore)
 ├── assets/
 │   ├── style.css          # Stylesheet
 │   └── script.js          # JavaScript (Carousel, Slider, etc.)
