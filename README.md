@@ -107,6 +107,12 @@ TURNSTILE_SECRET_KEY = <dein Secret Key aus Cloudflare>
 
 Nach dem Speichern kurz abwarten oder PHP neu starten lassen – fertig.
 
+Wenn dies nicht gehen sollte, dann kann die `includes/config.php` wie folgt befüllt werden (aber nur als Workaround):
+```
+define('TURNSTILE_SITE_KEY',   'YOUR_SITE_KEY');
+define('TURNSTILE_SECRET_KEY', 'YOUR_TURNSTILE_SECRET_KEY');
+```
+
 ### Schritt 5 – Funktion prüfen
 
 1. Seite öffnen, zum Kontaktformular scrollen.
