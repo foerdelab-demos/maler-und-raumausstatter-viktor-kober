@@ -18,48 +18,6 @@
     </url>
 
     <url>
-        <loc>https://maler-buedelsdorf.de/#leistungen</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
-        <loc>https://maler-buedelsdorf.de/#referenzen</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://maler-buedelsdorf.de/#kundenstimmen</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://maler-buedelsdorf.de/#einsatzgebiet</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
-        <loc>https://maler-buedelsdorf.de/#faq</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://maler-buedelsdorf.de/#ablauf</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://maler-buedelsdorf.de/#kontakt</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
         <loc>https://maler-buedelsdorf.de/impressum.php</loc>
         <changefreq>yearly</changefreq>
         <priority>0.2</priority>
