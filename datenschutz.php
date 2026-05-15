@@ -6,7 +6,7 @@
     <title>Datenschutzerklaerung | Viktor Kober – Maler & Raumausstatter</title>
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="Datenschutzerklaerung der Website von Viktor Kober - Maler und Raumausstatter in Buedelsdorf.">
-    <link rel="canonical" href="https://viktorkober.de/datenschutz.php">
+    <link rel="canonical" href="https://maler-buedelsdorf.de/datenschutz.php">
     <link rel="icon" type="image/png" href="img/Viktor%20Kober.png">
     <link rel="stylesheet" href="assets/style.css">
 </head>

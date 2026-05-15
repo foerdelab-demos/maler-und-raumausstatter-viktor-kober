@@ -6,7 +6,7 @@
     <title>Impressum | Viktor Kober – Maler & Raumausstatter</title>
     <meta name="robots" content="noindex, follow">
     <meta name="description" content="Impressum der Website von Viktor Kober - Maler und Raumausstatter in Buedelsdorf.">
-    <link rel="canonical" href="https://viktorkober.de/impressum.php">
+    <link rel="canonical" href="https://maler-buedelsdorf.de/impressum.php">
     <link rel="icon" type="image/png" href="img/Viktor%20Kober.png">
     <link rel="stylesheet" href="assets/style.css">
 </head>

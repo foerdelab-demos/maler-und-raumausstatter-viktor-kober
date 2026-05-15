@@ -2,3 +2,4 @@
 deploy.sh
 data/newsletter_subscribers.csv
 /includes/config.php
+.claude/
